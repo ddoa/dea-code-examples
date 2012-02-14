@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="lt540054" name="nl.ddoa.example.dice.DobbelsteenTest" tests="1" time="0.031" timestamp="2008-09-08T13:21:37">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="dirs.report" value="D:\Workspaces\ddoa_demo_workspace\ModelViewController\report" />
+    <property name="eclipse.pdebuild.templates" value="/D:/eclipse/plugins/org.eclipse.pde.build_3.3.2.v20071019/templates/" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="os.name" value="Windows XP" />
+    <property name="sun.boot.class.path" value="D:\JBossIDE\eclipse\jre\jre\lib\rt.jar;D:\JBossIDE\eclipse\jre\jre\lib\i18n.jar;D:\JBossIDE\eclipse\jre\jre\lib\sunrsasign.jar;D:\JBossIDE\eclipse\jre\jre\lib\jsse.jar;D:\JBossIDE\eclipse\jre\jre\lib\jce.jar;D:\JBossIDE\eclipse\jre\jre\lib\charsets.jar;D:\JBossIDE\eclipse\jre\jre\classes" />
+    <property name="TODAY" value="September 8 2008" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842" />
+    <property name="java.runtime.version" value="1.5.0_07-b03" />
+    <property name="user.name" value="mdkr" />
+    <property name="dirs.build" value="D:\Workspaces\ddoa_demo_workspace\ModelViewController\build" />
+    <property name="user.language" value="nl" />
+    <property name="sun.boot.library.path" value="D:\JBossIDE\eclipse\jre\jre\bin" />
+    <property name="dirs.reports" value="D:\Workspaces\ddoa_demo_workspace\ModelViewController\reports" />
+    <property name="ant.project.name" value="ModelViewController" />
+    <property name="DSTAMP" value="20080908" />
+    <property name="java.version" value="1.5.0_07" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.endorsed.dirs" value="D:\JBossIDE\eclipse\jre\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="49.0" />
+    <property name="user.country" value="NL" />
+    <property name="java.home" value="D:\JBossIDE\eclipse\jre\jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="D:\Workspaces\ddoa_demo_workspace\ModelViewController\build.xml" />
+    <property name="os.version" value="5.1" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="1.5.0_07-b03" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="eclipse.pdebuild.scripts" value="/D:/eclipse/plugins/org.eclipse.pde.build_3.3.2.v20071019/scripts/" />
+    <property name="user.home" value="C:\Documents and Settings\mdkr" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.library.path" value="D:\eclipse;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jre1.6.0_05\bin\client;C:\Program Files\Java\jre1.6.0_05\bin;C:\Program Files\PC Connectivity Solution\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\OpenSSH\bin;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Rational\common;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\VisualSVN\bin;C:\Program Files\TortoiseCVS;D:\JBossIDE\luntbuild-1.5;C:\Program Files\CVSNT\;C:\apache-ant-1.7.0\bin;C:\apache-maven-2.0.9\bin;C:\Program Files\IDM Computer Solutions\UltraEdit\;D:\eclipse\configuration\org.eclipse.osgi\bundles\334\1\.cp" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition" />
+    <property name="java.class.path" value="D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-antlr.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-bcel.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-bsf.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-log4j.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-oro.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-regexp.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-resolver.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-commons-logging.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-commons-net.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-jai.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-javamail.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-jdepend.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-jmf.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-jsch.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-junit.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-launcher.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-netrexx.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-nodeps.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-starteam.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-stylebook.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-swing.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-trax.jar;D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-weblogic.jar;D:\eclipse\configuration\org.eclipse.osgi\bundles\27\1\.cp\lib\remoteAnt.jar;C:\Program Files\Java\jdk1.6.0_10\lib\tools.jar;D:\eclipse\plugins\org.eclipse.swt.win32.win32.x86_3.3.3.v3349.jar;D:\Workspaces\ddoa_demo_workspace\ModelViewController\build;D:\JBossIDE\eclipse\plugins\com.atlassw.tools.eclipse.checkstyle_4.3.0\lib\checkstyle-all-4.3.jar;D:\JBossIDE\eclipse\plugins\org.junit4_4.1.0.1\junit-4.1.jar" />
+    <property name="ant.version" value="Apache Ant version 1.7.0 compiled on December 13 2006" />
+    <property name="TSTAMP" value="1521" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 3" />
+    <property name="eclipse.pdebuild.home" value="/D:/eclipse/plugins/org.eclipse.pde.build_3.3.2.v20071019/./" />
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\mdkr\LOCALS~1\Temp\" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="os.arch" value="x86" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="D:\JBossIDE\eclipse\jre\jre\lib\ext" />
+    <property name="user.dir" value="D:\Workspaces\ddoa_demo_workspace\ModelViewController" />
+    <property name="dirs.source" value="D:\Workspaces\ddoa_demo_workspace\ModelViewController\src" />
+    <property name="line.separator" value="
+" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="dirs.javadoc" value="D:\Workspaces\ddoa_demo_workspace\ModelViewController\javadoc" />
+    <property name="dirs.dist" value="D:\Workspaces\ddoa_demo_workspace\ModelViewController\dist" />
+    <property name="basedir" value="D:\Workspaces\ddoa_demo_workspace\ModelViewController" />
+    <property name="ant.java.version" value="1.5" />
+    <property name="ant.file.ModelViewController" value="D:\Workspaces\ddoa_demo_workspace\ModelViewController\build.xml" />
+    <property name="ant.core.lib" value="D:\eclipse\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.specification.version" value="1.5" />
+  </properties>
+  <testcase classname="nl.ddoa.example.dice.DobbelsteenTest" name="testDobbel" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

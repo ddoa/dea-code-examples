@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+
+<project name="ModelViewController" default="compile" basedir=".">
+
+    <property name="dirs.source" value="${basedir}\src" />
+    <property name="dirs.build" value="${basedir}\build" />
+    <property name="dirs.dist" value="${basedir}\dist" />
+    <property name="dirs.javadoc" value="${basedir}\javadoc" />
+    <property name="dirs.report" value="${basedir}\report" />
+    <property name="dirs.reports" value="${basedir}\reports" />
+
+    <target name="init">
+        <echo>Initializing timestamp, creating dirs</echo>
+        <tstamp />
+        <mkdir dir="${dirs.build}" />
+    </target>
+
+    <target name="compile" depends="init" description="Compile all of the sourdce code">
+        <echo>Compiling all the code</echo>
+        <javac srcdir="${dirs.source}" destdir="${dirs.build}" />
+    </target>
+
+    <target name="junittests" depends="compile" description="Executing JUnit tests">
+        <echo>Testing, testing, testing ... </echo>
+        <mkdir dir="${dirs.report}" />
+        <mkdir dir="${dirs.reports}" />
+        <junit haltonfailure="no" printsummary="yes" showoutput="yes">
+            <classpath>
+                <pathelement location="${dirs.build}" />
+                <pathelement path="${java.class.path}" />
+            </classpath>
+            <formatter type="xml" />
+            <batchtest todir="${dirs.reports}">
+                <fileset dir="${dirs.build}">
+                    <include name="**/*Test.class" />
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="${dirs.reports}">
+            <fileset dir="${dirs.reports}">
+                <include name="TEST-*.xml" />
+            </fileset>
+            <report format="frames" todir="${dirs.report}">
+            </report>
+        </junitreport>
+    </target>
+
+    <target name="javadoc">
+        <mkdir dir="${dirs.javadoc}" />
+        <echo>Generate javadoc</echo>
+        <javadoc sourcepath="${dirs.source}" destdir="${dirs.javadoc}" packagenames="*.*" />
+    </target>
+
+    <taskdef resource="checkstyletask.properties" />
+
+    <target name="checkstyle" description="Report of code convention violations">
+        <checkstyle config=".\toolconfigs\ddoa_checks.xml">
+            <fileset dir="${dirs.source}">
+                <exclude name="**/*Test.java" />
+                <include name="**/*.java" />
+            </fileset>
+        </checkstyle>
+    </target>
+
+    <target name="dist" depends="junittests" description="Generate the distribution">
+        <echo>Generate lib(s) in jar format</echo>
+        <mkdir dir="${dirs.dist}/lib" />
+        <jar jarfile="${dirs.dist}/lib/AntIntro-${DSTAMP}.jar" basedir="${dirs.build}" />
+    </target>
+
+    <target name="clean" description="Delete directories">
+        <delete dir="${dirs.build}" />
+        <delete dir="${dirs.dist}" />
+        <delete dir="${dirs.javadoc}" />
+        <delete dir="${dirs.report}" />
+        <delete dir="${dirs.reports}" />
+        <echo>All cleaned</echo>
+    </target>
+
+</project>

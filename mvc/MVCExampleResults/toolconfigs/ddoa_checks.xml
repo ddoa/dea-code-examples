@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This configuration file was written by the eclipse-cs plugin configuration editor
+-->
+<!--
+Checkstyle-Configuration: DDOAchecks
+Description:
+
+-->
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+    <property name="severity" value="warning"/>
+    <module name="TreeWalker">
+        <module name="JavadocMethod">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="JavadocType">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="JavadocVariable">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="JavadocStyle">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="ConstantName">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="LocalFinalVariableName">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="LocalVariableName">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="MemberName">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="MethodName">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="PackageName">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="ParameterName">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="StaticVariableName">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="TypeName">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="AvoidStarImport">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="IllegalImport"/>
+        <module name="RedundantImport"/>
+        <module name="UnusedImports"/>
+        <module name="FileLength"/>
+        <module name="LineLength">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="MethodLength"/>
+        <module name="ParameterNumber"/>
+        <module name="EmptyForIteratorPad">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="MethodParamPad">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="NoWhitespaceAfter">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="NoWhitespaceBefore">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="OperatorWrap">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="ParenPad">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="TypecastParenPad">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="TabCharacter">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="WhitespaceAfter">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="WhitespaceAround">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="ModifierOrder"/>
+        <module name="RedundantModifier"/>
+        <module name="AvoidNestedBlocks"/>
+        <module name="EmptyBlock"/>
+        <module name="LeftCurly">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="NeedBraces"/>
+        <module name="RightCurly">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="AvoidInlineConditionals"/>
+        <module name="DoubleCheckedLocking"/>
+        <module name="EmptyStatement"/>
+        <module name="EqualsHashCode"/>
+        <module name="HiddenField"/>
+        <module name="IllegalInstantiation"/>
+        <module name="InnerAssignment"/>
+        <module name="MagicNumber"/>
+        <module name="MissingSwitchDefault"/>
+        <module name="RedundantThrows"/>
+        <module name="SimplifyBooleanExpression"/>
+        <module name="SimplifyBooleanReturn"/>
+        <module name="DesignForExtension"/>
+        <module name="FinalClass"/>
+        <module name="HideUtilityClassConstructor"/>
+        <module name="InterfaceIsType"/>
+        <module name="VisibilityModifier"/>
+        <module name="ArrayTypeStyle"/>
+        <module name="FinalParameters"/>
+        <module name="TodoComment"/>
+        <module name="UpperEll"/>
+        <module name="AbstractClassName">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="EmptyForInitializerPad">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="JUnitTestCase"/>
+    </module>
+    <module name="PackageHtml">
+        <property name="severity" value="ignore"/>
+    </module>
+    <module name="NewlineAtEndOfFile"/>
+    <module name="Translation"/>
+</module>
