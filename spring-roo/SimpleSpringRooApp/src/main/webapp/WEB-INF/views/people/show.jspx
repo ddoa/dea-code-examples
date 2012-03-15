@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_nl_ica_ddoa_dda_springrooexample_Person" object="${person}" path="/people" z="vjVZhtZ7ezYgTY4xULu7VBEb7u0=">
+        <field:display field="bsn" id="s_nl_ica_ddoa_dda_springrooexample_Person_bsn" object="${person}" z="pPTbfdOMPwRWhrhEPUq4+TQTMnM="/>
+        <field:display field="nane" id="s_nl_ica_ddoa_dda_springrooexample_Person_nane" object="${person}" z="kzbLPer7yIZvd2KCX3Xt0WagtlQ="/>
+    </page:show>
+</div>

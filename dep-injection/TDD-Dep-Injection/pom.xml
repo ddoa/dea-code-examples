@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>nl.ica.ddoa.dda.springexample</groupId>
+	<artifactId>TDD-Dep-Injection</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>TDD-Dep-Injection</name>
+	<url>http://maven.apache.org</url>
+	<description>
+		Sample app for showing the Dependency Injection principle. The source code is the result
+		of an attempt to use TDD to show the problem of the singleton pattern and high coupling in general.
+		Just one dependency for unittesting, also use this project to show what 
+		mvn checkstyle:checkstyle, mvn cobertura:cobertura and mvn javadoc:javadoc can do.
+		
+		You can reproduce this source code using the following steps:
+		1) Write a test for the DatabaseManager _class_
+		2) Implement the DatabaseManager _class_
+		3) Build the Project class
+		4) Write a test for the PersonRepository class
+		5) Build the PersonRepository class
+		6) Create a dependency between the PersonRepository and DatabaseManager in the save method
+		7) Rename the DatabaseManager _class_ to AlmostWorkingDatabaseManager
+		8) Extract the DatabaseManager _interface_ out of the AlmostWorkingDatabaseManager
+		9) Fix the testcases due to refactoring
+		10) Build the PersonApp class to show that it actually works, optionally introduce the 
+		    DatabaseManagerFactory to decouple some more, but take a good look at the comments in the header of this class!
+	</description>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

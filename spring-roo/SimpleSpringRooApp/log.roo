@@ -1,0 +1,8 @@
+project --topLevelPackage nl.ica.ddoa.dda.springrooexample 
+jpa setup --provider HIBERNATE --database H2_IN_MEMORY 
+entity jpa --class nl.ica.ddoa.dda.springrooexample.Person
+field string --fieldName bsn 
+field string --fieldName nane
+json add
+web mvc setup
+web mvc all --package nl.ica.ddoa.dda.springrooexample// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-15 20:36:15
