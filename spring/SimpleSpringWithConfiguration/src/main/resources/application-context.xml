@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="moppenvrager" class="nl.ica.ddoa.ddoa.springexample.Moppenvrager">
+		<property name="verteller">
+			<ref bean="banaan"/>
+		</property>
+	</bean>
+	<bean id="aardbei" class="nl.ica.ddoa.ddoa.springexample.VertelDieVanEenAardbei">
+	</bean>
+	<bean id="banaan" class="nl.ica.ddoa.ddoa.springexample.VertelDieVanEenBanaan">
+	</bean>
+</beans>
