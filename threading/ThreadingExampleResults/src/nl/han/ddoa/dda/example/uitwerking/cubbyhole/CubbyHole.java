@@ -6,7 +6,7 @@ public class CubbyHole extends Object {
     private int contents;
     private boolean available = false;
 
-    public  int get() {
+    public synchronized int get() {
         while (available == false) {
             try {
                 wait();
@@ -14,11 +14,9 @@ public class CubbyHole extends Object {
                 e.printStackTrace();
             }
         }
-        synchronized(this){            
-            available = false;
-            notifyAll();
-        }
-        
+        available = false;
+        notifyAll();
+
         return contents;
     }
 
