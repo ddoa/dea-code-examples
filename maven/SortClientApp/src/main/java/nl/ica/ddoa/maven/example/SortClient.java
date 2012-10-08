@@ -6,6 +6,9 @@ import java.util.List;
 
 public class SortClient
 {
+    private SortClient()
+    {}
+
     public static void main( String[] args )
     {
         SortClient sortClient = new SortClient();
