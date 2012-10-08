@@ -4,8 +4,11 @@ import nl.ica.ddoa.sorter.client.SortService;
 
 import java.util.List;
 
-public class SortClient
+public final class SortClient
 {
+
+    public static final int LENGTH = 10;
+
     private SortClient()
     {}
 
@@ -13,7 +16,7 @@ public class SortClient
     {
         SortClient sortClient = new SortClient();
         ListGenerator listGenerator = new ListGenerator();
-        List<Integer> sortedList = sortClient.sort(listGenerator.generate(10));
+        List<Integer> sortedList = sortClient.sort(listGenerator.generate(LENGTH));
         sortClient.printList(sortedList);
     }
 
