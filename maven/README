@@ -1,0 +1,3 @@
+Before running the client please run the server first. Open the Project in NetBeans and deploy the app to Glassfish and make sure the appserver is running. To be able to compile the client first run mvn clean compile, then execute the main method. 
+
+Have fun!

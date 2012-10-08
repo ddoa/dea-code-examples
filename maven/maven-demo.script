@@ -1,0 +1,16 @@
+* mvn archetype:create
+* opties laten zien en aangeven wat groupId, artifactId en version is
+* kiezen voor example-archetype
+* mvn eclipse:eclipse en mvn idea:idea
+* demonstreren in je favo IDE (IntelliJ)
+* anatomie van pom.xml laten zien
+* demonstreren dat alleen junit als dependency genoeg is en dat checkstyle, pmd, javadoce en dist (=package) default erin zitten itt Ant
+* demo van Sonar en wisselwerking Sonar <-> Maven
+* Voeg een Logger toe en laat zien hoe eenvoudig de imports en dependencies werken
+* VoorbeeldApp uitbouwen naar een eenvoudige webserviceclient
+* Bouw een EJB in NetBeans die ints sorteert en bied deze aan als webservice
+* Start Glassfish en zoek in de admin (poort 4848) de URL op van de webservice
+* Gebruik de wsimport plugin van Maven om stubs te genereren
+* Schrijf in VoorbeeldApp een lijstgenerator en splitser met wat testcases en laat zien dat de code verbetert in Sonar (mvn sonar:sonar)
+* Implementeer de client op basis van de stubs
+* Laat AppProvisioner zien en demonstreer de werking van de tomcat-cargo plugin
