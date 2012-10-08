@@ -8,6 +8,7 @@ public final class SortClient
 {
 
     public static final int LENGTH = 10;
+    private final ListLogger listLogger = new ListLogger();
 
     private SortClient()
     {}
@@ -27,10 +28,7 @@ public final class SortClient
     }
 
 
-    private void printList(List<Integer> sortedList) {
-        for(Integer i:sortedList)
-        {
-            System.out.println(i);
-        }
+    public void printList(List<Integer> sortedList) {
+        listLogger.printList(sortedList);
     }
 }
