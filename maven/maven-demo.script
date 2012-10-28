@@ -1,4 +1,4 @@
-* mvn archetype:create
+* mvn archetype:generate
 * opties laten zien en aangeven wat groupId, artifactId en version is
 * kiezen voor example-archetype
 * mvn eclipse:eclipse en mvn idea:idea
