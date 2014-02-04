@@ -1,9 +1,8 @@
 package nl.ica.ddoa.dda.example;
 
-import nl.ica.ddoa.dda.example.MathTools;
-
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 public class MathToolsTest {
     
