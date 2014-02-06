@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 
+<!-- compile is the defautlt target, you better change this to dist -->
 <project name="AntIntro" default="compile" basedir=".">
 
 	<property name="dirs.source" value="${basedir}/src" />
@@ -46,6 +47,7 @@
 				</fileset>
 			</batchtest>
 		</junit>
+		<!-- Comment the junitreport tag when using JDK1.7, or update the Ant-version distributed with Eclipse -->
 		<junitreport todir="${dirs.junit}">
 			<fileset dir="${dirs.junit}">
 				<include name="TEST-*.xml" />
@@ -55,6 +57,7 @@
 		</junitreport>
 	</target>
 
+	<!-- Check your Path Environment Variable when javadoc(.exe) cannot be found -->
 	<target name="javadoc">
 		<mkdir dir="${dirs.javadoc}" />
 		<echo>Generate javadoc</echo>
