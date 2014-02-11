@@ -12,9 +12,8 @@ public class Consumer extends Thread {
     }
 
     public void run() {
-        int value = 0;
         for (int i = 0; i < 10; i++) {
-            value = cubbyhole.get();
+            int value = cubbyhole.get();
             System.out.println("Consumer #" + this.number
                                + " got: " + value);
             try {
