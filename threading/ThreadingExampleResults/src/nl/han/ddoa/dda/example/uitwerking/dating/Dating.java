@@ -1,18 +1,17 @@
 package nl.han.ddoa.dda.example.uitwerking.dating;
 import java.util.Date;
 
-/*
- * Created on 13-sep-2006
- *
- * TODO To change the template for this generated file go to
- * Window - Preferences - Java - Code Style - Code Templates
- */
-
 /**
- * @author Rody
+ * Description for the class Dating:
+ * <p/>
+ * Example usage:
+ * <p/>
+ * <pre>
  *
- * TODO To change the template for this generated type comment go to
- * Window - Preferences - Java - Code Style - Code Templates
+ * </pre>
+ *
+ * @author mdkr
+ * @version Copyright (c) 2014 HAN University, All rights reserved.
  */
 public class Dating implements Runnable {
 

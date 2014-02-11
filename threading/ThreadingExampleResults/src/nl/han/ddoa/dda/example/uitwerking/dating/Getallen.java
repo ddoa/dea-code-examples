@@ -2,10 +2,16 @@ package nl.han.ddoa.dda.example.uitwerking.dating;
 
 
 /**
- * @author Rody
+ * Description for the class Getallen:
+ * <p/>
+ * Example usage:
+ * <p/>
+ * <pre>
  *
- * TODO To change the template for this generated type comment go to
- * Window - Preferences - Java - Code Style - Code Templates
+ * </pre>
+ *
+ * @author mdkr
+ * @version Copyright (c) 2014 HAN University, All rights reserved.
  */
 public class Getallen {
 
