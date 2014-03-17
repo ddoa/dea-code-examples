@@ -1,8 +1,9 @@
 Before running the client please run the server first. Open the Project in NetBeans and deploy the app to Glassfish and make sure the appserver is running. To be able to compile the client first run mvn clean compile, add the target/jaxws/wsimport/java folder as a source folder and then execute the main method. 
 
-If you want to build the app from scratch please watch the series of three screencasts:
-* https://dl.dropbox.com/u/16735646/DDOA/Demos/Screencast%20Maven-WebServices-Sonar%20part1.mov
-* https://dl.dropbox.com/u/16735646/DDOA/Demos/Screencast%20Maven-WebServices-Sonar%20part2.mov
-* https://dl.dropbox.com/u/16735646/DDOA/Demos/Screencast%20Maven-WebServices-Sonar%20part3.mov
+If you want to build the app from scratch please watch the series of screencasts:
+* https://vimeo.com/88699584
+* https://vimeo.com/88699585
+* https://vimeo.com/88699586
+* https://vimeo.com/88699587
 
 Have fun!
