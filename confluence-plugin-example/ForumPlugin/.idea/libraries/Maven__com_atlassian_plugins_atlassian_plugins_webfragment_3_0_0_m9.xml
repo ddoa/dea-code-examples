@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.atlassian.plugins:atlassian-plugins-webfragment:3.0.0-m9">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/plugins/atlassian-plugins-webfragment/3.0.0-m9/atlassian-plugins-webfragment-3.0.0-m9.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/plugins/atlassian-plugins-webfragment/3.0.0-m9/atlassian-plugins-webfragment-3.0.0-m9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/plugins/atlassian-plugins-webfragment/3.0.0-m9/atlassian-plugins-webfragment-3.0.0-m9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

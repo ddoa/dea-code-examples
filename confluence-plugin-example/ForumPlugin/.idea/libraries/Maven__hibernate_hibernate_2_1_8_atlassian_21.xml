@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: hibernate:hibernate:2.1.8-atlassian-21">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/hibernate/hibernate/2.1.8-atlassian-21/hibernate-2.1.8-atlassian-21.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/hibernate/hibernate/2.1.8-atlassian-21/hibernate-2.1.8-atlassian-21-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/hibernate/hibernate/2.1.8-atlassian-21/hibernate-2.1.8-atlassian-21-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

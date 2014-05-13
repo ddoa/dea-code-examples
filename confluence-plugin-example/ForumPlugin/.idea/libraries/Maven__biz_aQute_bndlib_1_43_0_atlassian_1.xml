@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: biz.aQute:bndlib:1.43.0-atlassian-1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/biz/aQute/bndlib/1.43.0-atlassian-1/bndlib-1.43.0-atlassian-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/biz/aQute/bndlib/1.43.0-atlassian-1/bndlib-1.43.0-atlassian-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/biz/aQute/bndlib/1.43.0-atlassian-1/bndlib-1.43.0-atlassian-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

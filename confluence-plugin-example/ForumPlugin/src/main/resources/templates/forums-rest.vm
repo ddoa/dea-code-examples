@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Forums Angular & Confluence REST API + ActiveObjects Example</title>
+    <meta name="decorator" content="atl.general">
+    #requireResource("nl.han.ddoa.ForumPlugin:forum-plugin-resources")
+</head>
+<body>
+<section id="forumpluginapp" ng-app="forumplugin" ng-controller="ForumController">
+    <section id="main">
+        <div id="aui-message-bar"></div>
+        <h2>Existing Forums for user {{currentUser}}</h2>
+        <table id="forum-table">
+            <thead>
+            <tr>
+                <td>Title</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="forum in forums">
+                <td>{{forum.title}}</td>
+                <td><a href ng-click="deleteForum(forum.id)">Delete</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <form id="add-forum-rest-form" action="" method="post" class="aui unsectioned" ng-submit="saveForum()">
+            <h2>Create a Forum:</h2>
+
+            <div class="field-group">
+                <label for="forum-title-field">
+                    Title
+                    <span class="aui-icon icon-required"></span>
+                    <span class="content"> required</span></label>
+                <input class="text" type="text" id="forum-title-field" name="forum-title" ng-model="formData.title"/>
+            </div>
+            <div class="buttons-container">
+                <div class="buttons">
+                    <input class="button submit" type="submit" value="Save" id="add-forum-submit">
+                </div>
+            </div>
+        </form>
+    </section>
+</section>
+</body>
+</html>

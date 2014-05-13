@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.atlassian.velocity.htmlsafe:velocity-htmlsafe:1.2-fixedscm">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/velocity/htmlsafe/velocity-htmlsafe/1.2-fixedscm/velocity-htmlsafe-1.2-fixedscm.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/velocity/htmlsafe/velocity-htmlsafe/1.2-fixedscm/velocity-htmlsafe-1.2-fixedscm-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/velocity/htmlsafe/velocity-htmlsafe/1.2-fixedscm/velocity-htmlsafe-1.2-fixedscm-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

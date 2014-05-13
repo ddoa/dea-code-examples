@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.atlassian.botocss:botocss:3.1-fakraemer-fork">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/botocss/botocss/3.1-fakraemer-fork/botocss-3.1-fakraemer-fork.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/botocss/botocss/3.1-fakraemer-fork/botocss-3.1-fakraemer-fork-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/botocss/botocss/3.1-fakraemer-fork/botocss-3.1-fakraemer-fork-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

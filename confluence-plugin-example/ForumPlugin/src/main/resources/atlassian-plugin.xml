@@ -1,0 +1,69 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <!-- Everything that starts with ${project} will be resolved by Maven (Atlas SDK) -->
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+
+
+    <!-- AO stands for Active Objects, Atlassian's default ORM to access the database -->
+    <component-import key="ao" name="Active Objects Service" interface="com.atlassian.activeobjects.external.ActiveObjects" />
+    <ao key="ao-module">
+        <!-- Add your AO entities here -->
+        <entity>nl.han.ddoa.forumplugin.entities.ForumThread</entity>
+        <entity>nl.han.ddoa.forumplugin.entities.Post</entity>
+        <entity>nl.han.ddoa.forumplugin.entities.Comment</entity>
+    </ao>
+    <!-- Process @Transactional annotations so access to AO is done within a valid Transaction -->
+    <component key="tx-processor" name="Transactional Annotation Processor"
+               class="com.atlassian.activeobjects.external.TransactionalAnnotationProcessor">
+        <decription>Processes @Transactional annotations.</decription>
+    </component>
+    <!-- Small services that wraps access to AO in a Transaction -->
+    <component key="forumthread-repository" name="ForumThread Repository" class="nl.han.ddoa.forumplugin.entities.ForumThreadRepositoryImpl"/>
+
+    <!-- Servlet will generate server-side HTML, just a available to test the ActiveObjects provider -->
+    <servlet name="Forum Servlet" key="forum-list" class="nl.han.ddoa.forumplugin.servlet.ThreadServlet">
+        <url-pattern>/forum/list</url-pattern>
+    </servlet>
+
+    <!--
+        REST service can be called from the REST API browser (Confluence), also from one or more JavaScript resources.
+        Only available for logged-in users unless the REST service is provided with an @AnonymousAllowed annotation.
+    -->
+    <rest key="forumThreadRestService" path="/forum" version="1.0">
+        <description>Provides a REST interface to the ForumThread Service.</description>
+    </rest>
+
+    <!-- Simple Action and Velocity Macro to include the JavaScript file(s) and CSS -->
+    <xwork name="ForumThread Actions" key="forumThread-actions">
+        <package name="forum" extends="default" namespace="/plugins/forum">
+            <default-interceptor-ref name="validatingStack"/>
+            <action name="forum-admin" class="nl.han.ddoa.forumplugin.action.ForumThreadAction">
+                <!-- The vm page is available through: /confluence/plugins/forum/forum-admin.action -->
+                <result name="success" type="velocity">/templates/forums-rest.vm</result>
+            </action>
+        </package>
+    </xwork>
+
+    <!--
+        Static web resources, the *.vm files from the templates directory refer to these resources.
+        JavaScript files will perform REST calls upon our REST service.
+    -->
+    <resource type="i18n" name="i18n" location="ForumPlugin"/>
+    <web-resource key="forum-plugin-resources" name="Static ForumPlugin Resources">
+        <!-- The ajs dependency injects AJS for us, Atlassian's wrapper around jQuery and other stuff -->
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+
+        <resource type="download" name="ForumPlugin.css" location="/css/ForumPlugin.css"/>
+        <resource type="download" name="angular.js" location="/js/libs/angular.js" />
+        <resource type="download" name="app.js" location="/js/app.js"/>
+        <resource type="download" name="controller.js" location="/js/controller.js"/>
+        <resource type="download" name="forumservice.js" location="/js/forumservice.js"/>
+        <resource type="download" name="images/" location="/images"/>
+    </web-resource>
+
+</atlassian-plugin>
