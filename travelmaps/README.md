@@ -16,4 +16,4 @@ To install the image:
 - Run: vagrant reload (or vagrant up).
 The image has an alternative boot-setup. Select the first option, the image is now started in UI-mode
 
-Eventually, after appr. 20 minutes the image is completely provisioned. The image can be used with the credentials vagrant/vagrant.
+Eventually, after appr. 20 minutes the image is completely provisioned. The image can be used with the credentials vagrant/vagrant. When the performance of the image is poor, consider increasing the available memory in Vagrantfile. 
