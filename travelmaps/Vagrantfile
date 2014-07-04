@@ -1,0 +1,33 @@
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+    config.vm.box = "ubuntu"
+    config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box"
+
+    # Install Desktop GUI and Git
+    config.vm.provision "shell" do |s|
+        s.inline = "sudo add-apt-repository ppa:webupd8team/java;sudo apt-get update;sudo apt-get install -y ubuntu-desktop git"
+    end
+
+    # Installs PhpMyAdmin, MySQL and Java7 with presets
+    config.vm.provision "shell", path: "scripts/install-with-presets.sh"
+
+    # Installs Springsource Tool Suite 
+    config.vm.provision "shell", path: "scripts/install-sts.sh", privileged: false
+
+    # Installs SOAPUI
+    config.vm.provision "shell", path: "scripts/install-soapui.sh", privileged: false
+
+    # Installs NetBeans
+    config.vm.provision "shell", path: "scripts/install-netbeans.sh", privileged: false
+
+    # Set Paths
+    config.vm.provision "shell", path: "scripts/set-paths.sh", privileged: false
+
+    config.vm.provider :virtualbox do |vb|
+      vb.customize ["modifyvm", :id, "--memory", "2048"]
+      vb.customize ["modifyvm", :id, "--cpus", "2"]   
+      vb.customize ["modifyvm", :id, "--name", "TravelMaps developer image"]   
+      vb.gui = true
+    end
+end
