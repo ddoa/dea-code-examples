@@ -6,7 +6,7 @@ public class DutchNamer implements Namer {
 
     /**
      * 
-     * @param string
+     * @param name
      * @throws InvalidNameException
      *             thrown when name is empty or does not contain spaces
      */
