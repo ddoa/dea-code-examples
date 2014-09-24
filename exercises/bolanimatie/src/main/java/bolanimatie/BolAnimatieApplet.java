@@ -27,11 +27,11 @@ public class BolAnimatieApplet extends JApplet
 		bolanim = new BolAnimatie();
 		bolanim.setLocation(25, 25);		// grootte ster: 350x350
 		mypane.add(bolanim);
-
+		
 		animreg = new AnimatieRegelaar(bolanim, new Color(255, 255, 204));
 		animreg.setLocation(400, 0);		// grootte regelaar: 250x400
 		mypane.add(animreg);
-		
+				
 		mypane.setBackground(new Color(255, 255, 51));
 		setVisible(true);
 	}
