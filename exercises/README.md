@@ -5,4 +5,4 @@ This subdirectory contains the quickstart projects to do the exercises/workshops
 * Koenen/Kramers (Adapter, Factory, Singleton)
 * Reporting (SOLID)
 
-Checkout the branch "exercice-results" for the results of the first three workshops/exercises
+Checkout the branch "exercise-results" for the results of the first three workshops/exercises
