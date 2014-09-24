@@ -5,8 +5,8 @@ package oose.dea.solid;
  * @version Copyright (c) 2014 HAN University, All rights reserved.
  */
 public class LetterReportPrinter extends ReportPrinter {
-    public final IDataAccess reportDataAcccess = new ReportDataAccess();
-    public final ReportFormatter reportFormatter = new LetterReportFormatter();
+    private final IDataAccess reportDataAcccess = new ReportDataAccess();
+    private final ReportFormatter reportFormatter = new LetterReportFormatter();
 
     public void print() {
         reportDataAcccess.getReportData();

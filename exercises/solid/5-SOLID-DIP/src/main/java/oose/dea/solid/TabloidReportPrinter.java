@@ -6,8 +6,8 @@ package oose.dea.solid;
  */
 public class TabloidReportPrinter extends ReportPrinter {
 
-    public final IReportDataAccess reportDataAcccess = new ReportDataAccess();
-    public final ReportFormatter reportFormatter = new TabloidReportFormatter();
+    private final IReportDataAccess reportDataAcccess = new ReportDataAccess();
+    private final ReportFormatter reportFormatter = new TabloidReportFormatter();
 
 
     public void print() {
