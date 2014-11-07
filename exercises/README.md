@@ -1,4 +1,4 @@
-This subdirectory contains the quickstart projects to do the exercises/workshops from the DEA course:
+This subdirectory contains some results of the quickstart projects to do the exercises/workshops from the DEA course:
 * Bolanimatie (Threads)
 * VideoStore (Refactoring)
 * Kleurenmenger (Observer)
