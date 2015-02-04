@@ -49,6 +49,8 @@ To start a new Android project:
         
 8. Optionally, import the project into IntelliJ (or Eclipse) by selecting 'Import Project' in IntelliJ and selecting the project's `pom.xml`. When prompted to pick an SDK you just need to select the Android SDK home and your JDK.
 
-9. Change the names of things from 'Deckard' to whatever is appropriate for your project. Package name, classes, and the AndroidManifest are good places to start.
+9. Try out Android x86 instead of the slow emulator. Read http://rodymiddelkoop.blogspot.nl/2012/11/kickstarting-your-android-project-with.html to see how this stuff works. 
 
-10. Build an app. Win.
+10. Change the names of things from 'Deckard' to whatever is appropriate for your project. Package name, classes, and the AndroidManifest are good places to start.
+
+11. Build an app. Win.
