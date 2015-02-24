@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="onlineOrder" class="nl.oose.dea.orderservice.withdip.OnlineOrder">
+        <constructor-arg index="0" ref="cart"/>
+        <constructor-arg index="1" ref="paymentDetails"/>
+        <constructor-arg index="2" ref="paymentProcessor"/>
+        <constructor-arg index="3" ref="notificationService"/>
+        <constructor-arg index="4" ref="reservationService"/>
+    </bean>
+
+    <bean id="cartFactory" class="nl.oose.dea.orderservice.withdip.CartFactory"></bean>
+    <bean id="paymentDetailsFactory" class="nl.oose.dea.orderservice.withdip.PaymentDetailsFactory"></bean>
+
+    <bean id="cart" class="nl.oose.dea.orderservice.withdip.Cart" factory-bean="cartFactory" factory-method="create"/>
+    <bean id="paymentDetails" class="nl.oose.dea.orderservice.withdip.PaymentDetails" factory-bean="paymentDetailsFactory" factory-method="create"/>
+
+    <bean id="paymentProcessor" class="nl.oose.dea.orderservice.withdip.LoggingPaymentProcessor"/>
+    <bean id="notificationService" class="nl.oose.dea.orderservice.withdip.MailNotificationService"/>
+    <bean id="reservationService" class="nl.oose.dea.orderservice.withdip.CafetariaReservationService"/>
+</beans>
