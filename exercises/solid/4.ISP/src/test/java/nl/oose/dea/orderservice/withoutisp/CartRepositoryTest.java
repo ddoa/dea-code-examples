@@ -1,4 +1,4 @@
-package nl.oose.dea.orderservice.withisp;
+package nl.oose.dea.orderservice.withoutisp;
 
 import org.junit.Before;
 import org.junit.Test;

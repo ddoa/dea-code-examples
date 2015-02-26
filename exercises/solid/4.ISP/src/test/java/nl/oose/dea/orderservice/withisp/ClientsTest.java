@@ -3,7 +3,7 @@ package nl.oose.dea.orderservice.withisp;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class ClientsTest {
     private ReadOnlyAccessClient readOnlyAccessClient;
@@ -12,7 +12,9 @@ public class ClientsTest {
     @Before
     public void setUp() throws Exception {
         CartRepository cartRepository = new InMemoryCartRepository();
-        readOnlyAccessClient = new ReadOnlyAccessClient(cartRepository);
+        ReadOnlyCartRepository readOnlyCartRepository = (ReadOnlyCartRepository)cartRepository;
+
+        readOnlyAccessClient = new ReadOnlyAccessClient(readOnlyCartRepository);
         fullAccessClient = new FullAccessClient(cartRepository);
     }
 
@@ -25,9 +27,10 @@ public class ClientsTest {
         assertEquals(0, fullAccessClient.saveCurrentCart(c1));
         assertEquals(1, fullAccessClient.saveCurrentCart(c2));
 
-        assertEquals(2, readOnlyAccessClient.getNumberOfCarts());
 
-        readOnlyAccessClient.deleteAll();
-        assertEquals(0, readOnlyAccessClient.getNumberOfCarts());
+        // Try to uncomment and try call the delete method just like in the old version
+        // readOnlyAccessClient.deleteAll();
+
+        assertEquals(2, readOnlyAccessClient.getNumberOfCarts());
     }
 }
