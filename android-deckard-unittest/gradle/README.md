@@ -16,11 +16,11 @@ To start a new Android project:
 2. Run the [Android SDK Manager](http://developer.android.com/tools/help/sdk-manager.html) and install
 `API 19` and `Build-tools 21.1.2`.
 
-3. Download Deckard from GitHub:
+3. Download the DDA-examples project from GitHub:
     ```bash
-    wget https://github.com/robolectric/deckard-gradle/archive/master.zip
+    wget https://github.com/ddoa/dda-code-examples/archive/master.zip
     unzip master.zip
-    mv deckard-gradle-master my-new-project
+    cp android-deckard-unittest/gradle my-new-project
     ```
 
 4. Create a `local.properties` [file](http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Simple-build-files) in the root of the project that points to
@@ -32,7 +32,9 @@ your SDK installation location. Importing the project into Android Studio (detai
     ./gradlew clean test
     ```
 
-6. You should also be able to run the Espresso tests:
+6. Try out Android x86 instead of the slow emulator. Read http://rodymiddelkoop.blogspot.nl/2012/11/kickstarting-your-android-project-with.html to see how this stuff works. 
+
+7. You should also be able to run the Espresso tests:
 
     ```bash
     ./gradlew clean connectedAndroidTest
@@ -40,9 +42,9 @@ your SDK installation location. Importing the project into Android Studio (detai
 
     Note: Make sure to start an Emulator or connect a device first so the test has something to connect to.
 
-7. Change the names of things from 'Deckard' to whatever is appropriate for your project. Package name, classes, build.gradle, and the AndroidManifest are good places to start.
+8. Change the names of things from 'Deckard' to whatever is appropriate for your project. Package name, classes, build.gradle, and the AndroidManifest are good places to start.
 
-8. Build an app. Win.
+9. Build an app. Win.
 
 ## Android Studio Support
 
