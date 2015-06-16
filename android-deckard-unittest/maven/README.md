@@ -38,7 +38,7 @@ To start a new Android project:
     ```bash
     wget https://github.com/ddoa/dda-code-examples/archive/master.zip
     unzip master.zip
-    cp android-deckard-unittest my-new-project
+    cp android-deckard-unittest/maven my-new-project
     ```
 
 7. In the project directory you should be able to run the tests:
