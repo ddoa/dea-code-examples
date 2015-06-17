@@ -5,6 +5,8 @@ public class Item {
     private String category;
     private String title;
 
+    public Item(){}
+
     public Item(String sku, String category, String title) {
         this.sku = sku;
         this.category = category;
