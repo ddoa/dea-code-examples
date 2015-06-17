@@ -68,7 +68,7 @@ Steps
     }
 	</pre>
 
-	As you may know printing the stacktrace uses <code>System.out</code> which may be redirected. That's way code quality tools like [Sonar](http://www.sonarqube.org) advice developers to use a Logger instead. 
+	As you may know printing the stacktrace uses <code>System.out</code> which may be redirected. That's why code quality tools like [Sonar](http://www.sonarqube.org) advice developers to use a Logger instead. 
 	
 	Create a (one) logger in your class and use <code>logger.log()</code> (or <code>logger.warning()</code>, <code>logger.severe()</code>, etc.) instead. 
 	
