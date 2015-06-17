@@ -57,7 +57,7 @@ Steps
 
 	Call the <code>findAll()</code> method from your main-method and display the results.
 
-7. Until now, you might have caugt exceptions like this:
+7. Until now, you might have caught exceptions like this:
 	<pre>
 	try 
 	{
