@@ -1,12 +1,6 @@
 package oose.dea.dataaccess;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name = "items")
 public class Item {
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer id;
     private String sku;
     private String category;
