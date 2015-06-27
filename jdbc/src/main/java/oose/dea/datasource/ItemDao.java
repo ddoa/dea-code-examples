@@ -37,7 +37,7 @@ public class ItemDao {
     private void tryFindAll(List<Item> items) {
         try {
             Connection connection = DriverManager.getConnection(databaseProperties.connectionString());
-            Statement statement = connection.createStatement();
+            PreparedStatement statement = connection.prepareStatement("SELECT * from items");
             addNewItemsFromDatabase(items, statement);
             statement.close();
             connection.close();
@@ -46,8 +46,8 @@ public class ItemDao {
         }
     }
 
-    private void addNewItemsFromDatabase(List<Item> items, Statement statement) throws SQLException {
-        ResultSet resultSet = statement.executeQuery("SELECT * from items");
+    private void addNewItemsFromDatabase(List<Item> items, PreparedStatement statement) throws SQLException {
+        ResultSet resultSet = statement.executeQuery();
         while (resultSet.next())
         {
             addNewItemFromResultSet(items, resultSet);
