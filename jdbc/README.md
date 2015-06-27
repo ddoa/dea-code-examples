@@ -52,7 +52,7 @@ Steps
 	TIPS:
 	* Use <code>Class.forName</code> on the databasedriver to load the driver
 	* <code>DriverManager.getConnection()</code> creates a Connection
-	* Connection are able to create Statements: <code>connection.createStatement().executeQuery("SELECT * FROM items");</code>
+	* Connection are able to create Statements: <code>connection.prepareStatement("SELECT * FROM items").executeQuery();</code>
 	* Executing a query lead to a <code>ResultSet</code>
 	* You can loop through ResultSets using <code>next()</code>
 
@@ -62,7 +62,7 @@ Steps
 	```java
 	try
   {
-      connection.createStatement().execute("...");
+      connection.prepareStatement("...").execute();
       connection.close();
   } catch (SQLException e) {
       e.printStackTrace();
@@ -73,7 +73,7 @@ Steps
 
 	Create a (one) logger in your class and use <code>logger.log()</code> (or <code>logger.warning()</code>, <code>logger.severe()</code>, etc.) instead.
 
-8. Implement the rest of the DAO-methods (create, insert, update and delete). You might need [Transactions](http://www.mkyong.com/jdbc/jdbc-transaction-example/) for the latter three.
+8. Implement the rest of the DAO-methods (create, insert, update and delete) using PreparedStatements. You might need [Transactions](http://www.mkyong.com/jdbc/jdbc-transaction-example/) for the latter three.
 
 Done
 ----
