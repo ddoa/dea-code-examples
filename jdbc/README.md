@@ -77,4 +77,4 @@ Steps
 
 Done
 ----
-You can checkout the branch exercise-results for a working project and review possible differences.
+You can checkout the branch exercise-results for a working project and review possible differences. In this branch you'll also find an example of how to unit test your ItemDao using H2 in memory database. 
