@@ -48,7 +48,7 @@ Regelaar krijgt één extra ```JButton``` om de animatie te starten en te stoppe
 
 6. Van dit programma kun je een eenvoudig spelletje maken. We doen dit door aan de onderkant van het speelveld een batje te tekenen dat je met de muis kunt verplaatsen. Dit is het batje waar de bal op stuitert. Als de bal naast het batje komt, vliegt deze uit het speelveld en moet de ```Thread``` stoppen.
   * Bouw in de paintmethode van ```BolAnimatie``` het tekenen van het batje in, op een variable x-positie.
-  * Laat ```BolAnimatie```` de interface voor muisbewegingen implementeren en implementeer de methode ```mouseMoved``` om de positie van het batje te veranderen. Dit zorgt ervoor dat het batje van plaats verandert als de muis boven het speelveld beweegt. Zorg dat de klassen ```BolAnimatie``` ook daadwerkelijk naar de muisbeweging luistert (met zo'n ```addListener```-methode).
+  * Laat ```BolAnimatie``` de interface voor muisbewegingen implementeren en implementeer de methode ```mouseMoved``` om de positie van het batje te veranderen. Dit zorgt ervoor dat het batje van plaats verandert als de muis boven het speelveld beweegt. Zorg dat de klassen ```BolAnimatie``` ook daadwerkelijk naar de muisbeweging luistert (met zo'n ```addListener```-methode).
 
   Je vindt informatie over de benodigde klassen, interfaces en methoden in de API ```java.awt.event```.
 
