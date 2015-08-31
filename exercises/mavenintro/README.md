@@ -26,13 +26,13 @@ DEEL 1: command line
 Benodigdheden: zip met java-bestanden voor deze Maven Intro opdracht.
 
 Stappen:
+
 1. Zorg dat je een java-sdk (1.8) en eclipse hebt geinstalleerd. Docenten hebben deze opdracht getest met de indigo versie van eclipse, als je avontuurlijk bent pak je de nieuwste versie.
 2. Installeer maven 3 (maven.apache.org)
 3. Handig is als maven in je path staat zodat je deze command line kunt aanroepen (http://maven.apache.org/guides/getting-started/windows-prerequisites.html)
 4. Bestudeer zover je dat nog niet gedaan hebt college 1 + literatuur, zodat je een idee hebt wat je aan het doen bent en wat maven is!
-5. Maak een nieuw standaard project aan met het commando mvn archetype:generate
-
-Je krijgt nu een hele lijst met standaard projecten. Kies quickstart. Waarschijnlijk is dat het default nummer wat al staat ingesteld.
+5. Maak een nieuw standaard project aan met het commando `mvn archetype:generate`  
+  Je krijgt nu een hele lijst met standaard projecten. Kies quickstart. Waarschijnlijk is dat het default nummer wat al staat ingesteld.
 
 6. Kies de nieuwste versie
 7. Kies als groupid een goede default package naam (bijv nl.ica.oose.dea)
@@ -42,8 +42,8 @@ Je krijgt nu een hele lijst met standaard projecten. Kies quickstart. Waarschijn
 TIP: als je de POM.xml aanpast, draai dan altijd even dit commando opnieuw, zodat je dependencies aangepast worden!
 
 10. Importeer in eclipse: Existing Projects into Workspace. Als je kiest voor het vinkje “Copy project into workspace” let dan op dat je straks mvn in de geode folder (workspace-folder/project-naam) uitvoert.
-11. Er bestaat een kans dat het niet werkt omdat eclipse je maven repository niet kent. Fix het M2_REPO classpath variable in eclipse. (mvn kan dit voor je doen, zoek zelf uit hoe)
-12. Upgrade "the maven way" (dus zonder zelf jars te downloaden) junit naar versie 4.11
+11. Er bestaat een kans dat het niet werkt omdat eclipse je maven repository niet kent. Fix het `M2_REPO` classpath variable in eclipse. (mvn kan dit voor je doen, zoek zelf uit hoe)
+12. Upgrade "the maven way" (dus zonder zelf jars te downloaden) JUnit naar versie 4.11
 13. Plaats de java bestanden uit de zip in je project. Je mag ze niet aanpassen, zorg dat het project compileert. Let op: classes die eindigen op Test moeten in de test map!
 14. Met "mvn exec:java -Dexec.mainClass="nl.han.ica.mavenintro.App" kun je een klasse waar een main-methode instaat uitvoeren (in dit voorbeeld is dat de klasse nl.han.ica.mavenintro.App). Er zijn een aantal van deze klassen. Welke? Probeer dit uit.
 15. Op http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html staat de maven lifecyle beschreven. Zorg dat validate, compile, test en package werken zonder fouten!
