@@ -28,7 +28,7 @@ Benodigdheden: zip met java-bestanden voor deze Maven Intro opdracht.
 Stappen:
 1. Zorg dat je een java-sdk (1.8) en eclipse hebt geinstalleerd. Docenten hebben deze opdracht getest met de indigo versie van eclipse, als je avontuurlijk bent pak je de nieuwste versie.
 2. Installeer maven 3 (maven.apache.org)
-3. Handig is als maven in je path staat zodat je deze command line kunt aanroepen (http://maven.apache.org/guides/getting-started/windows-prerequisites.html)
+3. Handig is als maven in je path staat zodat je deze command line kunt aanroepen. Bekijk de Maven documentatie (http://maven.apache.org/guides/getting-started/windows-prerequisites.html) of de screencast (https://vimeo.com/137879254)
 4. Bestudeer zover je dat nog niet gedaan hebt college 1 + literatuur, zodat je een idee hebt wat je aan het doen bent en wat maven is!
 5. Maak een nieuw standaard project aan met het commando mvn archetype:generate
 
