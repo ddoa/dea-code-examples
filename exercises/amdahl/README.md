@@ -27,8 +27,8 @@ Al in 1967 heeft Amdahl een formule geformuleerd die aangeeft hoeveel performanc
 De genoemde wet van Amdahl is sterk vereenvoudigd. De overhead aan onderlinge communicatie is niet meegenomen. Dit betekent dat het in de praktijk nog ongunstiger is dan de uitkomst van deze wet aangeeft! In het algemeen geldt dat elke nieuw toegevoegde processor steeds minder bijdraagt aan de totale capaciteit van het systeem. Dit komt omdat steeds meer processorcapaciteit verloren gaat aan de noodzakelijke onderlinge communicatie.
 
 Voorbeeld van de toepassing van de wet van Amdahl:
-* een computer heeft 1000 CPU’s+
-* het programma kan in maximaal 1000 parallel uit te voeren delen opgesplitst worden (kortom, het zijn allemaal single core CPU's)+
+* een computer heeft 1000 CPU’s
+* het programma kan in maximaal 1000 parallel uit te voeren delen opgesplitst worden (kortom, het zijn allemaal single core CPU's)
 * 0.1% van het programma moet sequentieel uitgevoerd worden (bijvoorbeeld voor input en output).
 
 De speedup factor is:
