@@ -28,7 +28,7 @@ De genoemde wet van Amdahl is sterk vereenvoudigd. De overhead aan onderlinge co
 
 Voorbeeld van de toepassing van de wet van Amdahl:
 * een computer heeft 1000 CPU’s+
-* het programma kan in maximaal 1000 parallel uit te voeren delen opgesplitst worden+
+* het programma kan in maximaal 1000 parallel uit te voeren delen opgesplitst worden (kortom, het zijn allemaal single core CPU's)+
 * 0.1% van het programma moet sequentieel uitgevoerd worden (bijvoorbeeld voor input en output).
 
 De speedup factor is:
@@ -60,7 +60,7 @@ Exercise 2
 ----------
 Maak een Java console applicatie (geen GUI) die de wet van Amdahl kan evalueren voor gegeven parameterwaarden. Maak class methoden om de speedup factor en de efficiency te kunnen berekenen. Maak gebruik van het Mavenintro-project als opstart voor het gebruik van Ant en JUnit.
 
-De aanpak moet op de TDD-manier:
+De aanpak moet op de TDD-manier (red, green, refactor: eerst de testcase, dan de code, dan herstructureren):
 * maak eerst een Maven project
 * maak eerst een class Amdahl met geschikte methoden zonder deze berekeningen in de methoden te implementeren. Zorg in elk geval voor geschikte methodenamen en parameterlijsten;
 * maak de class AmdahlTest die JUnit testen kan uitvoeren of de berekeningen correct zijn. Gebruik daarvoor als testinvoer de gegevens uit exercise 1.
