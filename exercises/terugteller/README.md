@@ -64,7 +64,7 @@ Steps: RMI
 
   ```java
   ITerugTeller teller =
-    (ITerugTeller)LocateRegisty.getRegistry().lookup("terugteller");
+    (ITerugTeller)LocateRegistry.getRegistry().lookup("terugteller");
 
   ```
 
