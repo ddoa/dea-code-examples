@@ -11,7 +11,7 @@ In this exercise you'll learn:
 
 Introduction
 ------------
-Doel van deze oefening is het opdoen van praktijkervaring met het refactoren van bestaande code en het identificeren van “bad smells”. Bestudeer onderstaand fragment uit “Refactoring: a first Example”. In de startcode die je vindt in deze repository, zijn refactorings 1 t/m 4 reeds uitgevoerd. Creeer een nieuw Maven Java project en neem de startcode op in dit project. Voer de overige refactorings (5 t/m 13) zelf uit in de exercises 1 t/m 4. Gebruik je Java IDE voor de de genoemde refactorings mits deze ondersteund worden.
+Doel van deze oefening is het opdoen van praktijkervaring met het refactoren van bestaande code en het identificeren van “bad smells”. Bestudeer onderstaand fragment uit “Refactoring: a first Example”. In de startcode die je vindt in deze repository, zijn refactorings 1 t/m 4 reeds uitgevoerd. Creeer een nieuw Maven Java project en neem de startcode op in dit project. Voer de overige refactorings (5 t/m 13) zelf uit in de exercises 1 t/m 4. Gebruik je Java IDE voor de genoemde refactorings mits deze ondersteund worden.
 
 REFACTORING, A FIRST EXAMPLE
 ----------------------------
