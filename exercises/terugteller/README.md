@@ -19,14 +19,15 @@ Introduction
 We gaan met RMI een eenvoudige teller maken waarmee we van afstand kunnen communiceren. Gebruik de volgende informatie uit het onderstaande stappenplan.
 
 Het object TerugTeller kent de volgende functionaliteiten:
+
 * Het object heeft een eigenschap value. Dit is een geheel getal dat de waarde van de teller aangeeft. Initieel is value gelijk aan 200. Deze eigenschap kan worden bepaald met een methode setValue(int value) en worden verkregen met een methode getValue().
 * Het object heeft een methode decrement waarmee de waarde van de teller met 1 verlaagd wordt.  
 
 
 Steps: RMI
 ----------
-1. Maak een nieuw project oose_rmi_project, gebruik uiteraard Maven
-2.	Definieer de interface van het object in een Java interface genaamd ```ITerugTeller``` in package ```nl.ica.oose```. De interface moet overerven van ```java.rmi.Remote```. De operaties moeten een ```java.rmi.RemoteException``` throwen. De interface bevat de volgende methoden:
+1. Maak een nieuw project met de naam "oose\_rmi\_project", gebruik uiteraard Maven
+2.	Definiëer de interface van het onderzoekbject in een Java interface genaamd `ITerugTeller` in package `nl.ica.oose`. De interface moet overerven van `java.rmi.Remote`. Alle methodes moeten een `java.rmi.RemoteException` throwen. De interface bevat de volgende methoden:
 
   a. public void setValue(int value);
 
@@ -50,22 +51,19 @@ Steps: RMI
 
 5. Schrijf een klasse genaamd ```TerugTellerClient``` (draait in aparte VM, dus heeft in ieder geval een main-methode) die als client kan dienen voor het ```TerugTeller``` object. Roep in de constructor van ```TerugTellerClient```:
 
-  a.	setValue(200) aan
-
-  b.	in een for-lusje 100 keer de decrement-methode aan op dit ‘remote object’.
+  1.	setValue(200) aan
+  2.	in een for-lusje 100 keer de decrement-methode aan op dit ‘remote object’.
 
   Roep in main de constructor aan van TerugTellerClient. Laat de main en de constructor in de header een RemoteException gooien. Maak gebruik van de volgende code-snippets:
 
   ```java
   public TerugTellerClient() throws RemoteException {
   }
-
   ```
 
   ```java
   ITerugTeller teller =
     (ITerugTeller)LocateRegisty.getRegistry().lookup("terugteller");
-
   ```
 
 6.	Start de client door met je rechtermuisknop ‘Run Java Application’ te selecteren op het bestand TerugTellerServer.java.
@@ -73,18 +71,18 @@ Steps: RMI
 
 Steps RMI Callbacks
 -------------------
-1.	Stop de client en de server alsmede de RMI Registry
-2.	Wijzig nu de client ```TerugTellerClient``` zodat het geinformeerd wordt als de server-teller een veelvoud is van 25. Introduceer hiervoor een extra interface ```ICallback``` (extends ```Remote```) met een methode genaamd notifyChange (throws ```RemoteException```) met als argument een ```int``` (de value van de server indien hij een veelvoud is van 25).
-3.	Laat ```TerugTellerClient``` de interface ```ICallback``` implementeren door de ```int```-waarde af te drukken naar ```System.out```. Laat ```TerugTellerClient``` tevens overerven van ```java.rmi.server.UnicastRemoteObject```.
-4.	Wijzig de interface ```ITerugTeller``` met een methode ```addCallbackListener``` met als argument een object van het type ```ICallback```.
-5.	Wijzig de implementatie van de klasse ```TerugTeller``` zodanig dat aan de nieuwe interface ```ITerugTeller``` voldaan wordt. ```TerugTeller``` krijgt dus een methode ```addCallbackListener``` en een lijstje met listeners van het type ```ICallback```.
-6.	Wijzig de implementatie van de methode ```decrement``` zo dat als value een veelvoud is van 25, alle ```ICallbacks``` genotificeerd worden.
-7.	Start de server en client (in die volgorde) opnieuw . Hoe vaak wordt de methode ```notify``` aangeroepen?
+1.	Stop de client, de server en de RMI Registry
+2.	Wijzig nu de client `TerugTellerClient` zodat het geïnformeerd wordt als de server-teller een veelvoud is van 25. Introduceer hiervoor een extra interface `ICallback` (extends `Remote`) met een methode genaamd `notifyChange` (throws `RemoteException`) met als argument een `int` (de value van de server indien hij een veelvoud is van 25).
+3.	Laat `TerugTellerClient` de interface `ICallback` implementeren door de `int`-waarde af te drukken naar `System.out`. Laat `TerugTellerClient` tevens overerven van `java.rmi.server.UnicastRemoteObject`.
+4.	Wijzig de interface `ITerugTeller` met een methode `addCallbackListener` met als argument een object van het type `ICallback`.
+5.	Wijzig de implementatie van de klasse `TerugTeller` zodanig dat aan de nieuwe interface `ITerugTeller` voldaan wordt. `TerugTeller` krijgt dus een methode `addCallbackListener` en een lijstje met listeners van het type `ICallback`.
+6.	Wijzig de implementatie van de methode `decrement` zo dat als value een veelvoud is van 25, alle `ICallback`s genotificeerd worden.
+7.	Start de server en client (in die volgorde) opnieuw . Hoe vaak wordt de methode `notify` aangeroepen?
 
 Steps JUnit
 -----------
-1.	Maak in het oose_rmi_project een nieuwe test-sourcefolder aan volgens de Maven conventie.
-2.	Creeer in het package een nieuwe testcase conform het onderstaande voorbeeld:
+1.	Maak in het "oose\_rmi\_project" een nieuwe test-sourcefolder aan volgens de Maven conventie.
+2.	Creëer in het package een nieuwe testcase conform het onderstaande voorbeeld:
 
   ```java
   import org.junit.*;
@@ -107,15 +105,15 @@ Steps JUnit
   }
   ```
 
-3. Vul ```setUp()``` in door een nieuwe instantie van ```TerugTeller``` te instantieren en deze op te slaan in een globale variabele zodat de test* methoden gebruik kunnen maken van deze instantie.
+3. Vul `setUp()` in door een nieuwe instantie van `TerugTeller` te instantieren en deze op te slaan in een globale variabele zodat de test* methoden gebruik kunnen maken van deze instantie.
 
-4. Vul ```testGetValue``` in door te controleren op ```getValue``` gelijk is aan 10:
+4. Vul `testGetValue` in door te controleren op `getValue` gelijk is aan 10:
 
   ```java
   tt.setValue(10);
   assertEquals(tt.getValue(),10);
   ```
-5. Vul ```testDecrement``` in door de ```decrement``` methode aan te roepen en daarna te controleren of ```getValue()``` gelijk is aan 9:
+5. Vul `testDecrement` in door de `decrement` methode aan te roepen en daarna te controleren of `getValue()` gelijk is aan 9:
 
   ```java
   tt.setValue(10);
