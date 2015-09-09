@@ -31,6 +31,8 @@ public class BolAnimatieApplet extends JApplet
 		animreg = new AnimatieRegelaar(bolanim, new Color(255, 255, 204));
 		animreg.setLocation(400, 0);		// grootte regelaar: 250x400
 		mypane.add(animreg);
+
+		bolanim.setAnimatieRegelaar(animreg);
 				
 		mypane.setBackground(new Color(255, 255, 51));
 		setVisible(true);

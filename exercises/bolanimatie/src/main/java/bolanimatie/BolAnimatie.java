@@ -29,7 +29,8 @@ class BolAnimatie extends JPanel implements Runnable { // Constants
 
 	private boolean running;	
 	private Thread tekenThread;
-	
+	private AnimatieRegelaar animatieRegelaar;
+
 	/**
 	 * constructor
 	 */
@@ -129,24 +130,20 @@ class BolAnimatie extends JPanel implements Runnable { // Constants
 		}
 	}
 
-	public void toggle(AnimatieRegelaar animatieRegelaar)
+    public void start() {
+        toggleRunning();
+        tekenThread = new Thread( this );
+        tekenThread.start();
+        animatieRegelaar.toggleUI();
+    }
+
+	public void stop()
 	{
-		running = !running;
-		if (running)
-		{
-			tekenThread = new Thread( this );
-			tekenThread.start();
-		}
-		else {
-			tekenThread = null;
-		}
-		
-		if (animatieRegelaar != null)
-			animatieRegelaar.threadHasStopped();
+        toggleRunning();
+        tekenThread = null;
 	}
-	
-	@Override
-	public void run() {
+
+    public void run() {
 		while(running)
 		{
 			paintStep();
@@ -155,6 +152,16 @@ class BolAnimatie extends JPanel implements Runnable { // Constants
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
+
 		}
+		animatieRegelaar.toggleUI();
 	}
+
+    public void setAnimatieRegelaar(AnimatieRegelaar animatieRegelaar) {
+        this.animatieRegelaar = animatieRegelaar;
+    }
+
+    private void toggleRunning() {
+        running = !running;
+    }
 }

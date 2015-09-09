@@ -96,21 +96,22 @@ class AnimatieRegelaar extends JPanel implements ActionListener { // Variables
 	}
 
 	// ----- Listeners, ActionListener -------
-	public void threadHasStopped()
+	public void toggleUI()
 	{
-		startStopButton.setEnabled(true);
+		startStopButton.setEnabled(!startStopButton.isEnabled());
 	}
 	
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == startStopButton)
 		{
 			startStopButton.setEnabled(false);
-			ba.toggle(this);
 			if(startStopButton.getText().equals("Start"))
 			{
+				ba.start();
 				startStopButton.setText("Stop");
 			}
 			else {
+				ba.stop();
 				startStopButton.setText("Start");
 			}
 		}
