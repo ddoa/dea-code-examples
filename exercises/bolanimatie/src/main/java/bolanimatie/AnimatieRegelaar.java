@@ -10,7 +10,7 @@ import java.applet.*;
 import java.util.*;
 import javax.swing.*;
 
-class AnimatieRegelaar extends JPanel implements ActionListener { // Variables
+class AnimatieRegelaar extends JPanel implements ActionListener{ // Variables
 	private BolAnimatie ba;
 
 	private JLabel richtingLabel;
@@ -26,6 +26,7 @@ class AnimatieRegelaar extends JPanel implements ActionListener { // Variables
 
 	public AnimatieRegelaar(BolAnimatie b, Color bg) {
 		ba = b;
+
 		Font display = new Font("SansSerif", Font.PLAIN, 12);
 		setBackground(bg);
 
@@ -132,5 +133,4 @@ class AnimatieRegelaar extends JPanel implements ActionListener { // Variables
 			}
 		}
 	}
-
 }

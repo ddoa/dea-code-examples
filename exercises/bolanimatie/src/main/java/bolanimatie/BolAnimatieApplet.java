@@ -8,8 +8,6 @@ package bolanimatie;
  */
  
 import java.awt.*;
-import java.awt.event.*;
-import java.applet.*;
 import javax.swing.*;
 
 public class BolAnimatieApplet extends JApplet 
@@ -33,7 +31,7 @@ public class BolAnimatieApplet extends JApplet
 		mypane.add(animreg);
 
 		bolanim.setAnimatieRegelaar(animreg);
-				
+
 		mypane.setBackground(new Color(255, 255, 51));
 		setVisible(true);
 	}

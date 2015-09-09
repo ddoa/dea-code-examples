@@ -31,13 +31,20 @@ class BolAnimatie extends JPanel implements Runnable { // Constants
 	private Thread tekenThread;
 	private AnimatieRegelaar animatieRegelaar;
 
-	/**
+    /**
+     * Hierdoor is het batje deel van de bolanimatie, nog beter is het om deze volledig los
+     * van het balletje te kunnen bedienen. Hiervoor heb je (nog) meer AWT-kennis nodig.
+     */
+    private Paddle paddle = new Paddle(this);
+
+    /**
 	 * constructor
 	 */
 	public BolAnimatie() { // ----- uiterlijk
 		setBackground(Color.white);
 		setSize(SIZE, SIZE);
-	}
+        addMouseMotionListener(paddle);
+    }
 	
 	/**
 	 * Balletje verplaatsen. NB: de x- en y-component in de stap zijn altijd
@@ -47,31 +54,35 @@ class BolAnimatie extends JPanel implements Runnable { // Constants
 	 * dir-variable omgeklapt, waardoor de richting van de bal omdraait.
 	 */
 	private void moveBol() {
-		xpos = xpos + xdir * xspeed;
-		if (xpos <= 0) // kan als xdir = -1, bal loopt links weg
-		{
-			xpos = 0;
-			xdir = 1; // change dir
-		}
-		if (xpos >= SIZE - BOLSIZE) // kan als xdir = 1, bal loopt rechts weg
-		{
-			xpos = SIZE - BOLSIZE;
-			xdir = -1; // change dir
-		}
-		ypos = ypos + ydir * yspeed;
-		if (ypos <= 0) // kan als ydir = -1, bal loopt boven weg
-		{
-			ypos = 0;
-			ydir = 1; // change dir
-		}
-		if (ypos >= SIZE - BOLSIZE) // kan als xdir = 1, bal loopt onder weg
-		{
-			ypos = SIZE - BOLSIZE;
-			ydir = -1; // change dir
-		}
-	}
+        xpos = xpos + xdir * xspeed;
+        if (xpos <= 0) // kan als xdir = -1, bal loopt links weg
+        {
+            xpos = 0;
+            xdir = 1; // change dir
+        }
+        if (xpos >= SIZE - BOLSIZE) // kan als xdir = 1, bal loopt rechts weg
+        {
+            xpos = SIZE - BOLSIZE;
+            xdir = -1; // change dir
+        }
 
-	// ------- Gebruikersacties --------------------
+        ypos = ypos + ydir * yspeed;
+        if (ypos <= 0) // kan als ydir = -1, bal loopt boven weg
+        {
+            ypos = 0;
+            ydir = 1; // change dir
+        }
+        if (collidesWithPaddle())
+        {
+            ydir = -1; // change dir
+        }
+    }
+
+    private boolean collidesWithPaddle() {
+        return paddle.collides(xpos, ypos);
+    }
+
+    // ------- Gebruikersacties --------------------
 
 	/**
 	 * Richting instellen: De hoek van de richting (in graden) wordt omgerekend
@@ -128,6 +139,7 @@ class BolAnimatie extends JPanel implements Runnable { // Constants
 			g.setColor(new Color(COLORSTEP * k, 0, 255 - COLORSTEP * k));
 			g.fillOval(ixpos + k, iypos + k, BOLSIZE - 2 * k, BOLSIZE - 2 * k);
 		}
+        paddle.paint(g);
 	}
 
     public void start() {
@@ -164,4 +176,5 @@ class BolAnimatie extends JPanel implements Runnable { // Constants
     private void toggleRunning() {
         running = !running;
     }
+
 }
