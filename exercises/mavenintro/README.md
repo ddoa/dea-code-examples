@@ -32,7 +32,7 @@ Stappen:
 4. Bestudeer zover je dat nog niet gedaan hebt college 1 + literatuur, zodat je een idee hebt wat je aan het doen bent en wat maven is!
 5. Maak een nieuw standaard project aan met het commando mvn archetype:generate
 
-Je krijgt nu een hele lijst met standaard projecten. Kies quickstart. Waarschijnlijk is dat het default nummer wat al staat ingesteld.
+  Je krijgt nu een hele lijst met standaard projecten. Kies quickstart. Waarschijnlijk is dat het default nummer wat al staat ingesteld.
 
 6. Je ziet mogelijk nu een lange lijst van verschillende types projecten, zo ja druk dan op ENTER, je kiest nu de default (maven-archetype-quickstart); zo nee ga dan naar de volgende stap. 
 7. Kies uit het lijstje van verschillende versies de nieuwste (op het moment van schrijven deze oefening is dat 1.1)
