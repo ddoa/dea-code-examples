@@ -63,10 +63,15 @@ Steps: RMI
 
   ```java
   ITerugTeller teller =
+<<<<<<< HEAD
     (ITerugTeller)LocateRegisty.getRegistry().lookup("terugteller");
+=======
+    (ITerugTeller)LocateRegistry.getRegistry().lookup("terugteller");
+
+>>>>>>> ddoa/master
   ```
 
-6.	Start de client door met je rechtermuisknop ‘Run Java Application’ te selecteren op het bestand TerugTellerServer.java.
+6.	Start de server door met je rechtermuisknop ‘Run Java Application’ te selecteren op het bestand TerugTellerServer.java.
 7.	Start de client door met je rechtermuisknop ‘Run Java Application’ te selecteren op het bestand TerugTellerClient.java.
 
 Steps RMI Callbacks

@@ -29,24 +29,39 @@ Stappen:
 
 1. Zorg dat je een java-sdk (1.8) en eclipse hebt geinstalleerd. Docenten hebben deze opdracht getest met de indigo versie van eclipse, als je avontuurlijk bent pak je de nieuwste versie.
 2. Installeer maven 3 (maven.apache.org)
-3. Handig is als maven in je path staat zodat je deze command line kunt aanroepen (http://maven.apache.org/guides/getting-started/windows-prerequisites.html)
+3. Handig is als maven in je path staat zodat je deze command line kunt aanroepen. Bekijk de Maven documentatie (http://maven.apache.org/guides/getting-started/windows-prerequisites.html) of de screencast (https://vimeo.com/137879254)
 4. Bestudeer zover je dat nog niet gedaan hebt college 1 + literatuur, zodat je een idee hebt wat je aan het doen bent en wat maven is!
+<<<<<<< HEAD
 5. Maak een nieuw standaard project aan met het commando `mvn archetype:generate`  
+=======
+5. Maak een nieuw standaard project aan met het commando mvn archetype:generate
+
+>>>>>>> ddoa/master
   Je krijgt nu een hele lijst met standaard projecten. Kies quickstart. Waarschijnlijk is dat het default nummer wat al staat ingesteld.
 
-6. Kies de nieuwste versie
-7. Kies als groupid een goede default package naam (bijv nl.ica.oose.dea)
-8. kies als artifactId een projectnaam (bijv MavenIntro)
-9. converteer met mvn eclipse:eclipse je project naar een eclipse-compatible project (.project en .classpath worden toegevoegd)
+6. Je ziet mogelijk nu een lange lijst van verschillende types projecten, zo ja druk dan op ENTER, je kiest nu de default (maven-archetype-quickstart); zo nee ga dan naar de volgende stap. 
+7. Kies uit het lijstje van verschillende versies de nieuwste (op het moment van schrijven deze oefening is dat 1.1)
+8. Kies als groupid een goede default package naam (bijv nl.ica.oose.dea)
+9. kies als artifactId een projectnaam (bijv MavenIntro)
+10. converteer met mvn eclipse:eclipse je project naar een eclipse-compatible project (.project en .classpath worden toegevoegd)
 
 TIP: als je de POM.xml aanpast, draai dan altijd even dit commando opnieuw, zodat je dependencies aangepast worden!
 
+<<<<<<< HEAD
 10. Importeer in eclipse: Existing Projects into Workspace. Als je kiest voor het vinkje “Copy project into workspace” let dan op dat je straks mvn in de geode folder (workspace-folder/project-naam) uitvoert.
 11. Er bestaat een kans dat het niet werkt omdat eclipse je maven repository niet kent. Fix het `M2_REPO` classpath variable in eclipse. (mvn kan dit voor je doen, zoek zelf uit hoe)
 12. Upgrade "the maven way" (dus zonder zelf jars te downloaden) JUnit naar versie 4.11
 13. Plaats de java bestanden uit de zip in je project. Je mag ze niet aanpassen, zorg dat het project compileert. Let op: classes die eindigen op Test moeten in de test map!
 14. Met "mvn exec:java -Dexec.mainClass="nl.han.ica.mavenintro.App" kun je een klasse waar een main-methode instaat uitvoeren (in dit voorbeeld is dat de klasse nl.han.ica.mavenintro.App). Er zijn een aantal van deze klassen. Welke? Probeer dit uit.
 15. Op http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html staat de maven lifecyle beschreven. Zorg dat validate, compile, test en package werken zonder fouten!
+=======
+11. Importeer in eclipse: Existing Projects into Workspace. Als je kiest voor het vinkje “Copy project into workspace” let dan op dat je straks mvn in de goede folder (workspace-folder/project-naam) uitvoert.
+12. Er bestaat een kans dat het niet werkt omdat eclipse je maven repository niet kent. Fix het M2_REPO classpath variable in eclipse. (mvn kan dit voor je doen, zoek zelf uit hoe)
+13. Upgrade "the maven way" (dus zonder zelf jars te downloaden) junit naar versie 4.11
+14. Plaats de java bestanden uit de zip in je project. Je mag ze niet aanpassen met uitzondering van de packagenaam, zorg dat het project compileert. Let op: classes die eindigen op Test(s) moeten in de test map!
+15. Met "mvn exec:java -Dexec.mainClass="nl.han.ica.mavenintro.App" kun je een klasse waar een main-methode instaat uitvoeren (in dit voorbeeld is dat de klasse nl.han.ica.mavenintro.App). Er zijn een aantal van deze klassen. Welke? Probeer dit uit.
+16. Op http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html staat de maven lifecyle beschreven. Zorg dat validate, compile, test en package werken zonder fouten!
+>>>>>>> ddoa/master
 
 Gefeliciteerd! Je hebt het eerste maven project aan de praat, en werkend in Eclipse! Dankzij de POM.xml kan iedereen met maven en java je project compileren, testen, draaien, packagen. Ook kan dit volledig automatisch, op bijvoorbeeld een build server!
 
