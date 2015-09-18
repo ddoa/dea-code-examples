@@ -36,10 +36,5 @@ public class Customer {
  					+ " frequent renter points\n";
 		return result;
 	}
-	public static void main(String[] args) {
-		Customer cust = new Customer("Jan Janssen");
-		cust.addRental(new Rental (new Movie("SpongeBob", Movie.NEW_RELEASE), 2));
-		cust.addRental(new Rental (new Movie("Ice Age 3", Movie.CHILDRENS), 3));
-		System.out.println(cust.statement());
-	}
+
 }
