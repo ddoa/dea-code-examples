@@ -1,0 +1,25 @@
+
+Here is a code segment that draws a pie chart given a Graphics object and 
+an Array containing Integers to be represented in the pie chart. It is drawn
+at location (xOffset, yOffset) and with the radius specified to be of size 100.
+
+public void paint(Graphics g, Integer[] data) {
+		int radius = 100;
+
+		//first compute the total number of students
+		double total = 0.0;
+		for (int i = 0; i < data.length; i++) {
+			total += data[i];
+		}
+		//if total == 0 nothing to draw
+		if (total != 0) {
+			double startAngle = 0.0;
+			for (int i = 0; i < data.length; i++) {
+				double ratio = (data[i] / total) * 360.0;
+				//draw the arc
+				g.setColor(LayoutConstants.courseColours[i%LayoutConstants.courseColours.length]);
+				g.fillArc(LayoutConstants.xOffset, LayoutConstants.yOffset + 300, 2 * radius, 2 * radius, (int) startAngle, (int) ratio);
+				startAngle += ratio;
+			}
+		}
+	}
