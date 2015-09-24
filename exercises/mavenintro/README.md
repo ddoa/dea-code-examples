@@ -38,16 +38,12 @@ Stappen:
 7. Kies uit het lijstje van verschillende versies de nieuwste (op het moment van schrijven deze oefening is dat 1.1)
 8. Kies als groupid een goede default package naam (bijv nl.ica.oose.dea)
 9. kies als artifactId een projectnaam (bijv MavenIntro)
-10. converteer met mvn eclipse:eclipse je project naar een eclipse-compatible project (.project en .classpath worden toegevoegd)
-
-TIP: als je de POM.xml aanpast, draai dan altijd even dit commando opnieuw, zodat je dependencies aangepast worden!
-
-11. Importeer in eclipse: Existing Projects into Workspace. Als je kiest voor het vinkje “Copy project into workspace” let dan op dat je straks mvn in de goede folder (workspace-folder/project-naam) uitvoert.
-12. Er bestaat een kans dat het niet werkt omdat eclipse je maven repository niet kent. Fix het M2_REPO classpath variable in eclipse. (mvn kan dit voor je doen, zoek zelf uit hoe)
-13. Upgrade "the maven way" (dus zonder zelf jars te downloaden) junit naar versie 4.11
-14. Plaats de java bestanden uit de zip in je project. Je mag ze niet aanpassen met uitzondering van de packagenaam, zorg dat het project compileert. Let op: classes die eindigen op Test(s) moeten in de test map!
-15. Met "mvn exec:java -Dexec.mainClass="nl.han.ica.mavenintro.App" kun je een klasse waar een main-methode instaat uitvoeren (in dit voorbeeld is dat de klasse nl.han.ica.mavenintro.App). Er zijn een aantal van deze klassen. Welke? Probeer dit uit.
-16. Op http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html staat de maven lifecyle beschreven. Zorg dat validate, compile, test en package werken zonder fouten!
+10. Importeer in eclipse: Import Existing Maven Projects into Workspace. Als je kiest voor het vinkje “Copy project into workspace” let dan op dat je straks mvn in de goede folder (workspace-folder/project-naam) uitvoert.
+11. Er bestaat een kans dat het niet werkt omdat eclipse je maven repository niet kent. Fix het M2_REPO classpath variable in eclipse. (mvn kan dit voor je doen, zoek zelf uit hoe)
+12. Upgrade "the maven way" (dus zonder zelf jars te downloaden) junit naar versie 4.11. TIP: als je de POM.xml aanpast, heb je het commando mvn eclipse:eclipse in de command line nodig zodat je dependencies aangepast worden. We zullen in Deel 2 zien dat dit handiger kan.
+13. Plaats de java bestanden uit de zip in je project. Je mag ze niet aanpassen met uitzondering van de packagenaam, zorg dat het project compileert. Let op: classes die eindigen op Test(s) moeten in de test map!
+14. Met "mvn exec:java -Dexec.mainClass="nl.han.ica.mavenintro.App" kun je een klasse waar een main-methode instaat uitvoeren (in dit voorbeeld is dat de klasse nl.han.ica.mavenintro.App). Er zijn een aantal van deze klassen. Welke? Probeer dit uit.
+15. Op http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html staat de maven lifecyle beschreven. Zorg dat validate, compile, test en package werken zonder fouten!
 
 Gefeliciteerd! Je hebt het eerste maven project aan de praat, en werkend in Eclipse! Dankzij de POM.xml kan iedereen met maven en java je project compileren, testen, draaien, packagen. Ook kan dit volledig automatisch, op bijvoorbeeld een build server!
 
