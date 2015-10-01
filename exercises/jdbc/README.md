@@ -6,7 +6,7 @@ The following resources are convenient (some are required) during the exercise:
 
 * DEA Slides: Java EE Data Source Layer
 * Chapter 10 from Patterns of Enterprise Application Architecture (Fowler)
-* MySQL installed on your local machine including a MySQL client like [MySQL workbench](https://dev.mysql.com/downloads/workbench/).
+* MySQL installed on your local machine (Windows download at https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-5.6.26.0.msi) including a MySQL client like [MySQL workbench](https://dev.mysql.com/downloads/workbench/).
 * The [JDBC API Guide](http://docs.oracle.com/javase/7/docs/technotes/guides/jdbc/)
 * Jenkovs [JDBC Tutorial](http://tutorials.jenkov.com/jdbc/index.html)
 
