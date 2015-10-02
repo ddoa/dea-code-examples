@@ -33,7 +33,7 @@ Steps: RMI
   b.	public int getValue();
 
   c.	public void decrement();
-3.	Implementeer de interface ```ITerugTeller``` met een klasse ```TerugTeller``` die overerft van ```java.rmi.server.UnicastRemoteObject```. Zorg ook voor een constructor van ```TerugTeller``` die een ```RemoteException``` gooit.
+3.	Implementeer de interface ```ITerugTeller``` met een klasse ```TerugTeller``` die overerft van ```java.rmi.server.UnicastRemoteObject``` en een attribuut value heeft. Zorg ook voor een constructor van ```TerugTeller``` die een ```RemoteException``` gooit.
 4.	Schrijf een klasse genaamd ```TerugTellerServer``` (draait in aparte VM, dus heeft in ieder geval een main-methode) die een ```TerugTeller``` object instantieert en registreert in de RMI Registry:
 
   ```java
@@ -78,7 +78,7 @@ Steps RMI Callbacks
 3.	Laat ```TerugTellerClient``` de interface ```ICallback``` implementeren door de ```int```-waarde af te drukken naar ```System.out```. Laat ```TerugTellerClient``` tevens overerven van ```java.rmi.server.UnicastRemoteObject```.
 4.	Wijzig de interface ```ITerugTeller``` met een methode ```addCallbackListener``` met als argument een object van het type ```ICallback```.
 5.	Wijzig de implementatie van de klasse ```TerugTeller``` zodanig dat aan de nieuwe interface ```ITerugTeller``` voldaan wordt. ```TerugTeller``` krijgt dus een methode ```addCallbackListener``` en een lijstje met listeners van het type ```ICallback```.
-6.	Wijzig de implementatie van de methode ```decrement``` zo dat als value een veelvoud is van 25, alle ```ICallbacks``` genotificeerd worden.
+6.	Wijzig de implementatie van de methode ```decrement``` zo dat als value een veelvoud is van 25, alle ```ICallbacks``` genotificeerd worden. Zorg er wel voor dat de client zich "geregisteerd" heeft als CallbackListener, anders krijgt hij geen notificaties.
 7.	Start de server en client (in die volgorde) opnieuw . Hoe vaak wordt de methode ```notify``` aangeroepen?
 
 Steps JUnit
