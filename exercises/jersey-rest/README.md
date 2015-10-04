@@ -19,7 +19,7 @@ Steps
 -----
 1. Download [Tomcat8](http://apache.proserve.nl/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.zip "Tomcat8"). Unzip this file in a directory of choice (there are known issues with paths containing spaces, you're safe when you unzip this file in the root of your C-disk (Windows), Applications Folder (Mac) or /opt folder (Linux).   
 2. Open the Project (pom.xml) in your IDE. The next steps will assume you've used IntelliJ, but we'll guess it still works in any IDE that supports [Maven](http://maven.apache.org/ "Maven") and [Tomcat8](http://tomcat.apache.org/ "Tomcat8"). 
-3.  Add a new Jersey configuration called <code>RestConfig</code>. Make your it extends <code>ResourceConfig</code> and let is look for REST resources in the package <code>oose.dea.services.rest</code>. Let this configuration match the application path "/rest".
+3.  Add a new Jersey configuration called <code>RestConfig</code>. Make your it extends <code>ResourceConfig</code> and let it look for REST resources in the package <code>oose.dea.services.rest</code>. Let this configuration match the application path "/rest".
 4. Add a new REST Resource: create a class <code>ItemResource</code> and register "/items" as the default path. Add a method <code>String getTextItems()</code> that:
 
 	* returns a hardcoded String "bread, butter".  
