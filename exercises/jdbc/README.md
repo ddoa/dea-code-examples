@@ -9,6 +9,10 @@ The following resources are convenient (some are required) during the exercise:
 * MySQL installed on your local machine (Windows download at https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-5.6.26.0.msi) including a MySQL client like [MySQL workbench](https://dev.mysql.com/downloads/workbench/).
 * The [JDBC API Guide](http://docs.oracle.com/javase/7/docs/technotes/guides/jdbc/)
 * Jenkovs [JDBC Tutorial](http://tutorials.jenkov.com/jdbc/index.html)
+* Need more theoretic background? Visit one of these resources:
+	* http://staff.cs.upt.ro/~ioana/arhit/2015/DataAccessPattern.ppt
+	* http://blog.fedecarg.com/2009/03/12/domain-driven-design-and-data-access-strategies/
+	* http://martinfowler.com/eaaCatalog/
 
 In this exercise you'll learn:
 ------------------------------
