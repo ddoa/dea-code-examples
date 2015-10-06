@@ -8,6 +8,12 @@ The following resources are convenient during the exercise:
 * Chapter 4 and 14 from Patterns of Enterprise Application Architecture (Fowler)
 * IntelliJ (or Eclipse) and Tomcat8
 * Chrome with the [PostMan REST Client-plugin](https://www.getpostman.com/)
+* Need more theory about REST, JSON or Jersey? Visit these resources for more background information:
+	* http://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340
+	* http://docs.oracle.com/javaee/6/tutorial/doc/giepu.html
+	* https://jersey.java.net/
+	* http://www.restapitutorial.com/index.html
+	* http://www.slideshare.net/rmaclean/json-and-rest
  
 In this exercise you'll learn:
 ------------------------------
