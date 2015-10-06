@@ -12,6 +12,6 @@ public class POSCashOrderTest {
     }
 
     private Cart createCart() {
-        return new CartFactory().create();
+        return new CartProvider().get();
     }
 }

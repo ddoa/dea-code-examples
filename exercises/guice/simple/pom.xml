@@ -24,5 +24,10 @@
             <artifactId>mockito-all</artifactId>
             <version>1.9.5</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.0</version>
+        </dependency>
     </dependencies>
 </project>

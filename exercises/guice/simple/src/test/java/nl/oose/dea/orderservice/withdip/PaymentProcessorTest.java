@@ -13,7 +13,7 @@ public class PaymentProcessorTest {
     }
 
     private Cart createCart() {
-        return new CartFactory().create();
+        return new CartProvider().get();
     }
 
     private PaymentDetails createPaymentDetails()
