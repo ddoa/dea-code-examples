@@ -43,7 +43,7 @@ public class OnlineOrderTest {
 
 
     private Cart createCart() {
-        return new CartFactory().create();
+        return new CartProvider().get();
     }
 
     private PaymentDetails createPaymentDetails()

@@ -12,7 +12,7 @@ public class OrderService {
                 bind(NotificationService.class).to(MailNotificationService.class);
                 bind(PaymentProcessor.class).to(LoggingPaymentProcessor.class);
                 bind(ReservationService.class).to(CafetariaReservationService.class);
-                bind(Cart.class).toInstance(new CartFactory().create());
+                bind(Cart.class).toProvider(CartProvider.class);
                 bind(MailClient.class).to(FakeMailClient.class);
             }
         };
