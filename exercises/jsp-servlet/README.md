@@ -6,6 +6,9 @@ The following resources are convenient during the exercise:
 
 * DEA Slides: Java EE Presentation Layer 
 * Chapter 4 and 14 from Patterns of Enterprise Application Architecture (Fowler)
+* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account by mailing @rodmidde:
+	* http://www.pluralsight.com/courses/java-web-fundamentals (including Java Server Pages)
+	* http://www.pluralsight.com/courses/springmvc-intro (only the Introduction)
  
 In this exercise you'll learn:
 ------------------------------
