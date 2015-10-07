@@ -4,7 +4,10 @@ Resources
 -------------
 The following resources are convenient during the exercise:
 * Sheets: Design Patterns, Observer-Observable
-
+* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account by mailing @rodmidde:
+	* http://www.pluralsight.com/courses/design-patterns-on-ramp (Observer)
+	* http://www.pluralsight.com/courses/patterns-library (Observer)
+	
 In this exercise you'll learn:
 ------------------------------
 * how to apply the Java observer API to decouple views and controllers from models
