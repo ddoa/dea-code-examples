@@ -6,6 +6,10 @@ The following resources are convenient during the exercise:
 
 * DEA Slides: Dependency Injection Guiced Up
 * DEA Slides: Java EE - Presentation Layer
+* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account by mailing @rodmidde:
+	* http://www.pluralsight.com/courses/java-testing-introduction (Dependencies)
+	* http://www.pluralsight.com/courses/inversion-of-control (Inversion of Control, Dependency Injection)
+	* http://www.pluralsight.com/courses/context-dependency-injection-1-1 (Understanding Context and Dependency Injection)
 
 In this exercise you'll learn:
 ------------------------------

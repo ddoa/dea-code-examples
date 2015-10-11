@@ -5,6 +5,9 @@ Resources
 The following resources are convenient during the exercise:
 * Sheets Threads
 * Sheets RMI
+* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account by mailing @rodmidde:
+	* http://www.pluralsight.com/courses/ads2 (only Sorting Algorithms)
+	* http://www.pluralsight.com/courses/java2
 
 In this exercise you'll learn:
 ------------------------------

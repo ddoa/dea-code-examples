@@ -5,7 +5,10 @@ Resources
 The following resources are convenient during the exercise:
 
 * DEA Slides: Dependency Injection Guiced Up
-
+* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account by mailing @rodmidde:
+	* http://www.pluralsight.com/courses/java-testing-introduction (Dependencies)
+	* http://www.pluralsight.com/courses/inversion-of-control (Inversion of Control, Dependency Injection)
+	
 In this exercise you'll learn:
 ------------------------------
 * how to use the @javax.inject.Inject annotation
@@ -17,7 +20,7 @@ Steps
 -----
 1. Open the Project (pom.xml) in your IDE. The next steps will assume you've used IntelliJ, but we'll guess it still works in any IDE that supports [Maven](http://maven.apache.org/ "Maven").
 
-2. Before applying DI with Guice we have to add Guice to our pom.xml:
+2. Before applying DI with Guice check that Guice is added to our pom.xml:
 
 	```xml
 	<dependency>
@@ -31,7 +34,7 @@ Steps
 
 4. Find out which classes need the ```@Inject``` annotation and add the annotations. TIP: Check which classes depend on interfaces like MailClient, NotificationService, etc.
 
-5. Create a new class ```OrderModule``` that extends ```AbstractModule```. Add bindings for dependencies e.g. on interfaces. Classes like ```Cart``` are special, we provided a factory ```CartFactory``` for that, so bind ```Cart``` to the instance that results in calling the ```create``` method on the ```CartFactory```
+5. Create a new class ```OrderModule``` that extends ```AbstractModule```. Add bindings for dependencies e.g. on interfaces. Classes like ```Cart``` are special, we provided a Guice Provider ```CartProvider``` for that, so bind ```Cart``` to the provider class ```CartProvider```
 
 6. Create a Guice injector in the ```main``` method of ```OrderService``` and call ```getInstance(...)``` to get an instance of ```OnlineOrder```, ```POSCashOrder``` or ```POSCreditOrder```.
 

@@ -7,6 +7,10 @@ The following resources are convenient during the exercise:
 * Sheets les 1.1: Week 1a - Developing distributed applications
 * Sheets les 1.1: Week 1b – Maven
 * Sheets les 1.2: Softwarekwaliteit JUnit
+* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account by mailing @rodmidde:
+	* http://www.pluralsight.com/courses/java-testing-introduction
+	* http://www.pluralsight.com/courses/java2 (Exceptions)
+	* http://www.pluralsight.com/courses/test-driven-development-java (advanced stuff for use in the OOSE-project)
 
 In this exercise you'll learn:
 ------------------------------
