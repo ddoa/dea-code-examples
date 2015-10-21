@@ -38,7 +38,7 @@ Steps
 6. Now run the application with Tomcat. Visit [http://localhost:8080/rest/items](http://localhost:8080/rest/items) with the PostMan plugin. 
 7. Add a new method to the <code>ItemResource</code> called <code>String getJsonItems()</code> that:
 
-	* returns a hardcoded JSON String "{ "bread", "butter" }"
+	* returns a hardcoded JSON String "[\"bread\", \"butter\"]"
 	* matches a GET request
 	* produces JSON
 
