@@ -1,4 +1,4 @@
-package nl.ica.ddoa.dda.springexample;
+package nl.han.ica.oose.dea.examples.designpatterns;
 
 /**
  * Incomplete (so almost working....) databasemanager. Its purpose is to show what pain we're in when this

@@ -1,4 +1,4 @@
-package nl.ica.ddoa.dda.springexample;
+package nl.han.ica.oose.dea.examples.designpatterns;
 
 public interface DatabaseManager {
 

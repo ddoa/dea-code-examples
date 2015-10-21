@@ -8,6 +8,10 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import nl.han.ica.oose.dea.examples.designpatterns.DatabaseManagerFactory;
+import nl.han.ica.oose.dea.examples.designpatterns.Person;
+import nl.han.ica.oose.dea.examples.designpatterns.PersonRepository;
+
 public class PersonRepositoryTest {
 
 	private PersonRepository pr;

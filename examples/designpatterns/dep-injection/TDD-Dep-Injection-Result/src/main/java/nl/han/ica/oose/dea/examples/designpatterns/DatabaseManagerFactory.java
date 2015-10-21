@@ -1,4 +1,4 @@
-package nl.ica.ddoa.dda.springexample;
+package nl.han.ica.oose.dea.examples.designpatterns;
 
 /**
  * Hides the fact that AlmostWorkingDatabaseManager is a singleton and could be extended in a way that other 
