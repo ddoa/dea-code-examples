@@ -40,7 +40,7 @@ Stappen:
 6. Je ziet mogelijk nu een lange lijst van verschillende types projecten, zo ja druk dan op ENTER, je kiest nu de default (maven-archetype-quickstart); zo nee ga dan naar de volgende stap. 
 7. Kies uit het lijstje van verschillende versies de nieuwste (op het moment van schrijven deze oefening is dat 1.1)
 8. Kies als groupid een goede default package naam (bijv nl.ica.oose.dea)
-9. kies als artifactId een projectnaam (bijv MavenIntro)
+9. Kies als artifactId een projectnaam (bijv MavenIntro)
 10. Importeer in eclipse: Import Existing Maven Projects into Workspace. Als je kiest voor het vinkje “Copy project into workspace” let dan op dat je straks mvn in de goede folder (workspace-folder/project-naam) uitvoert.
 11. Er bestaat een kans dat het niet werkt omdat eclipse je maven repository niet kent. Fix het M2_REPO classpath variable in eclipse. (mvn kan dit voor je doen, zoek zelf uit hoe)
 12. Upgrade "the maven way" (dus zonder zelf jars te downloaden) junit naar versie 4.11. TIP: als je de POM.xml aanpast, heb je het commando mvn eclipse:eclipse in de command line nodig zodat je dependencies aangepast worden. We zullen in Deel 2 zien dat dit handiger kan.
