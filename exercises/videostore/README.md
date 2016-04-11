@@ -10,11 +10,11 @@ The following resources are convenient during the exercise:
 
 In this exercise you'll learn:
 ------------------------------
-* how to apply several Refactoring steps to remove bad smells
+* How to apply several Refactoring steps to remove bad smells.
 
 Introduction
 ------------
-Doel van deze oefening is het opdoen van praktijkervaring met het refactoren van bestaande code en het identificeren van “bad smells”. Bestudeer onderstaand fragment uit “Refactoring: a first Example”. In de startcode die je vindt in deze repository, zijn refactorings 1 t/m 4 reeds uitgevoerd. Creeer een nieuw Maven Java project en neem de startcode op in dit project. Voer de overige refactorings (5 t/m 13) zelf uit in de exercises 1 t/m 4. Gebruik je Java IDE voor de genoemde refactorings mits deze ondersteund worden.
+The objective of this excerise is to gain practical expierience with refactoring existing code and identifying "bad smells". Examine the section “Refactoring: A first example” down below. Refactorings 1 to 4 are already executed in the starting code that you can find in this repository. Create a new Maven Java project and include the starting code from this project. Execute the other refactorings (5 to 13) yourself in the exercises 1 t/m 4. Use your Java IDE for the previously mentioned refactorings only if they are supported.
 
 REFACTORING, A FIRST EXAMPLE
 ----------------------------
