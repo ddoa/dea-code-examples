@@ -14,7 +14,7 @@ In this exercise you'll learn:
 
 Introduction
 ------------
-The objective of this excerise is to gain practical expierience with refactoring existing code and identifying "bad smells". Examine the section “Refactoring: A first example” down below. Refactorings 1 to 4 are already executed in the starting code that you can find in this repository. Create a new Maven Java project and include the starting code from this project. Execute the other refactorings (5 to 13) yourself in the exercises 1 t/m 4. Use your Java IDE for the previously mentioned refactorings only if they are supported.
+The objective of this exercise is to gain practical expierience with refactoring existing code and identifying "bad smells". Examine the section “Refactoring: A first example” down below. Refactorings 1 to 4 are already executed in the starting code that you can find in this repository. Create a new Maven Java project and include the starting code from this project. Execute the other refactorings (5 to 13) yourself in the exercises 1 t/m 4. Use your Java IDE for the previously mentioned refactorings only if they are supported.
 
 REFACTORING, A FIRST EXAMPLE
 ----------------------------
