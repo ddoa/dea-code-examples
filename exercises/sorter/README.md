@@ -34,7 +34,7 @@ Requirements
 Steps
 -----
 1.	Maak een nieuw Maven Project aan.
-2.	Maak eerst de interface ```ISorter```. Voeg een methode doe die een List van Integer als invoer krijgt en een ```List``` van ```Integer``` als uitvoer.
+2.	Maak eerst de interface ```ISorter```. Voeg een methode toe die een List van Integer als invoer krijgt en een ```List``` van ```Integer``` als uitvoer.
 3.	Maak nu een nieuwe lege klasse met de naam van jouw sorteeralgoritme en zorg dat de klasse aan de interface ```ISorter``` voldoet.
 4.	Schrijf JUnit tests voor je de implementatie op zoekt en/of inbouwt. Wat verwacht je dat de sorter doet met een lege lijst? Wat doet de sorter bij een null? Wat doet de sorter als de lijst al gesorteerd is? Houd dus rekening met een aantal cases waar jouw gekozen algoritme tegen moet kunnen.
 5.	Nadat je de JUnit test hebt gemaakt voeg je de implementatie van internet of de Java API toe. Run je unittests en bekijk of alle tests groen zijn, zo niet, fix je code!
