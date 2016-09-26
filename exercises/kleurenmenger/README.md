@@ -24,11 +24,11 @@ In deze workshop bouw je een handige utility voor het vinden van de getalswaarde
 De startcode bij deze workshop bevat al een werkend programma, met de complete interface. De werking van het programma is echter niet helemaal goed.
 Het probleem is het volgende: Wanneer je de kleur verandert in het ene invoerpaneel, verandert de kleur in het middenpaneel, maar de waarden in het andere invoerpaneel veranderen niet mee. Je kunt dit gemakkelijk testen: Als je de RGB-waarden op 255, 0, 0 (fel rood) zet, geeft het middenpaneel dit inderdaad weer. Schuif je daarna de tint naar blauw, dan blijft het rechterpaneel op de waarden 255, 0, 0 staan!
 
-De oorzaak van de fout is dat de invoerpanelen veranderingen alleen doorgeven aan het kleurpaneel in het midden.
+De oorzaak van de fout is dat de invoerpanelen veranderingen alleen doorgeven aan het kleurpaneel (KleurCanvas in de broncode) in het midden.
 
 ![Alt text](images/invoerpanelen.png)
 
-Het programma kan verbeterd worden door gebruik te maken van het Observable-Observer-patroon. Bedenk dat de twee invoerpanelen en het kleurpanelen feitelijk views zijn van een kleur. We maken een aparte klasse ```Kleur``` die de gegevens over de huidige kleur bijhoudt en de benodigde berekeningen uitvoert. De drie panelen worden ```Observers``` van deze klass. ```Kleur``` luistert naar veranderingen bij de schuivertjes en update de Observers na een verandering.
+Het programma kan verbeterd worden door gebruik te maken van het Observable-Observer-patroon. Bedenk dat de twee invoerpanelen en het kleurpaneel (KleurCanvas) feitelijk views zijn van een kleur. We maken een aparte klasse ```Kleur``` die de gegevens over de huidige kleur bijhoudt en de benodigde berekeningen uitvoert. De drie panelen worden ```Observers``` van deze klass. ```Kleur``` luistert naar veranderingen bij de schuivertjes en update de Observers na een verandering.
 
 ![Alt text](images/invoerpanelen-oo.png)
 
