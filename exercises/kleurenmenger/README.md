@@ -41,11 +41,11 @@ Als je Eclipse gebruikt is het importeren van de source (.java) bestanden voldoe
 
 2.Maak de nieuwe klasse ```Kleur```, die het ‘model’ voor de kleur wordt. Deze klasse:
   *is een uitbreiding van ```Observable```
-  * onthoudt gegevens over de huidige kleur en voert omrekeningen uit. De meeste code kun je knippen uit de klasse KleurPaneel
-  * implementeert de interface ```NumberListener``` om te luisteren naar input van de schuivertjes. (Ook dit wordt nu gedaan door ```KleurPaneel```, daar kan dus het een en ander weg!)
+  * onthoudt gegevens over de huidige kleur en voert omrekeningen uit. De meeste code kun je knippen uit de klasse KleurCanvas
+  * implementeert de interface ```NumberListener``` om te luisteren naar input van de schuivertjes. (Ook dit wordt nu gedaan door ```KleurCanvas```, daar kan dus het een en ander weg!)
   * heeft get-methodes, waarmee de Observers informatie over de huidige kleur kunnen opvragen
 
-3.```KleurPaneel```, ```HSBInvoerPaneel``` en ```RGBInvoerPaneel``` moeten ```Observer``` worden van de ```Kleur```. Als de kleur verandert, worden de gekleurde vlakjes aangepast en de schuivers correct ingesteld. Elk van deze drie klassen:
+3.```KleurCanvas```, ```HSBInvoerPaneel``` en ```RGBInvoerPaneel``` moeten ```Observer``` worden van de ```Kleur```. Als de kleur verandert, worden de gekleurde vlakjes aangepast en de schuivers correct ingesteld. Elk van deze drie klassen:
   * implementeert de interface ```Observer```
   * meldt zich aan als ```Observer``` bij ```Kleur```
   * onthoudt zelf niets van de kleur (wanneer informatie nodig is wordt een getmethode van ```Kleur``` aangeroepen)
