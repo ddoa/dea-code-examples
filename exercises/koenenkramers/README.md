@@ -25,7 +25,31 @@ Helaas kennen de classes geen methode ```translate()```: Koenen zoekt met een me
 Steps
 -----
 1. Maak een UML design class diagram volgens deze eisen. Pas Adapter, Factory Method en Singleton toe naar analogie van het voorbeeld in [LAR]26.1 t/m 26.5.
-2. Schrijf een Java-programma dat voldoet aan de eisen.
+2. Bekijk de broncode van de KoenenDictionary en KramersDictionary maar neem de broncode _niet_ op in je project. In plaats daarvan voeg je een Maven-dependency toe:
+
+	```
+	<dependency>
+    		<groupId>nl.oose.dea.koenenkramers</groupId>
+    		<artifactId>dictionaries</artifactId>
+    		<version>1.0</version>
+	</dependency>
+	```
+	
+	Voeg ook in je pom.xml een extra repository-sectie aan om de dependency te kunnen downloaden:
+
+	```
+	<repositories>
+       		<repository>
+            		<id>github-rody</id>
+            		<url>https://raw.githubusercontent.com/ddoa/workshop-koenen-kramers/master/</url>
+            		<snapshots>
+                		<enabled>true</enabled>
+                		<updatePolicy>always</updatePolicy>
+            		</snapshots>
+        	</repository>
+    	</repositories>
+	```
+3. Door deze library te gebruiken kun je niet meer de broncode aanpassen en is het noodzakelijk te werken met het Adapter-design pattern. Pas dit nu toe in de broncode samen met het Factory Method-design pattern.
 
 Done
 ----
