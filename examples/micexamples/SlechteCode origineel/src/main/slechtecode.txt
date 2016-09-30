@@ -1,0 +1,5 @@
+Maak 1 main class
+4 aparte klassen
+1 hoofdklasse met daarin 1 functie
+- Die maakt de 4 klassen aan
+- Die roept de 4 klassen aan als dat noodzakelijk is.
