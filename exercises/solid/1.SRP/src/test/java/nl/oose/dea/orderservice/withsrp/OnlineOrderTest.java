@@ -15,6 +15,12 @@ public class OnlineOrderTest {
          * - NotificationService
          * - ReservationService
          * - PaymentProcessor
+         *
+         * This test case cannot fully check of OnlineOrder is implemented correctly. It should check whether methods
+         * are called on the required interfaces but implementations of these interfaces are declared and intitialized in
+         * the class itself, so we can't put assertions on those dependencies. Well, we could, but not without applying
+         * the dependency inversion principle together with dependency injection, but that's for another exercise.
+         *
          */
         Order order = new OnlineOrder(createCart(), createPaymentDetails());
         order.checkout();

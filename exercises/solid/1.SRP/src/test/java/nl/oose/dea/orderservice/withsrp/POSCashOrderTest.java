@@ -13,7 +13,7 @@ public class POSCashOrderTest {
          *
          * An POSCashOrder depends on none of the given interfaces. It does not depend on the ReservationService because we can get the items right out of the shop, we don't
          * have to access our inventory, and we get paid cash.
-
+         *
          */
         Order order = new POSCashOrder(createCart());
         order.checkout();

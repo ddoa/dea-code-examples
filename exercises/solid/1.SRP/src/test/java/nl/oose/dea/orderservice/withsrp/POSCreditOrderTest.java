@@ -15,7 +15,12 @@ public class POSCreditOrderTest {
          * - PaymentProcessor
          *
          * It does not depend on the InventorySystem because we can get the items right out of the shop, we don't
-         * have to access our inventory
+         * have to access our inventory.
+         *
+         * This test case cannot fully check of POSCreditOrder is implemented correctly. It should check whether methods
+         * are called on the required interfaces but implementations of these interfaces are declared and intitialized in
+         * the class itself, so we can't put assertions on those dependencies. Well, we could, but not without applying
+         * the dependency inversion principle together with dependency injection, but that's for another exercise.
          */
         Order order = new POSCreditOrder(createCart(), createPaymentDetails());
         order.checkout();
