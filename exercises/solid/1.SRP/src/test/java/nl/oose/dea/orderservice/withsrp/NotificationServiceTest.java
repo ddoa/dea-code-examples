@@ -2,8 +2,6 @@ package nl.oose.dea.orderservice.withsrp;
 
 import org.junit.Test;
 
-import javax.mail.MessagingException;
-
 public class NotificationServiceTest {
 
     @Test(expected = OrderException.class)

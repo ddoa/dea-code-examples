@@ -11,6 +11,10 @@ import org.junit.Test;
 import static org.junit.Assert.assertTrue;
 
 public class ReservationServiceTest {
+    private static final String PRODUCT = "Frikandel";
+    private static final String EMAIL_ADDRESS = "oose@gmail.com";
+    private static final int NOTHING_LEFT_IN_INVENTORY = 0;
+
     private ReservationService reservationService;
 
     @Before
@@ -22,15 +26,19 @@ public class ReservationServiceTest {
     @Test
     public void buyAllFrikandellen() throws Exception {
         reservationService.reserveInventory(createCartWithSufficientInventory());
-        assertTrue(reservationService.isOnStock("Frikandel", 0));
+        assertTrue(reservationService.isOnStock(PRODUCT, NOTHING_LEFT_IN_INVENTORY));
     }
 
     private Cart createCartWithSufficientInventory() {
-        return new Cart("OOSE","oose@gmail.com", new Item[] { new Item("Frikandel", 20) }, 50);
+        return createCart(20);
     }
 
     private Cart createCartWithInsufficientInventory() {
-        return new Cart("OOSE","oose@gmail.com", new Item[] { new Item("Frikandel", 21) }, 50);
+        return createCart(21);
+    }
+
+    private Cart createCart(int quantity) {
+        return new Cart("OOSE",EMAIL_ADDRESS, new Item[] { new Item(PRODUCT, quantity) }, 50);
     }
 
     @Test(expected = OrderException.class)
