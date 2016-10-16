@@ -31,7 +31,7 @@ Visit [localhost:8080](http://localhost:8080/).
 
 5.  Add a simple next.jsp page that displays the current Date. Add next.jsp to the web.xml using the *servlet* and *servlet-mapping* tags and make it accessible using the url <b>next</b>. Test the application.
 
-6.  Create a servlet class called <code>ViewItemsController</code>. Implement the doGet method by writing a simple list of items, use the existing classes <code>ItemService</code> and <code>Item</code>. Make the servlet accessible using the url <b>viewItems</b>, *without* modifying the web.xml (so use an annotation). Add a link to the next.jsp page that refers to this servlet. Test the application.
+6.  Create a class called <code>ViewItemsController</code> that extends HttpServlet. Implement the doGet method by writing a simple list of items, use the existing classes <code>ItemService</code> and <code>Item</code>. Make the servlet accessible using the url <b>viewItems</b>, *without* modifying the web.xml (so use an annotation). Add a link to the next.jsp page that refers to this servlet. Test the application.
 
 7.  Create a new jsp called viewItems.jsp (*View*) and let the servlet serve as a *PageController*. The servlet is allowed to prepare the model for the view and passes the data using attributes before dispatching the request and response to the view. Test the application.
 
