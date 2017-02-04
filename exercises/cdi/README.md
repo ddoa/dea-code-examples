@@ -32,9 +32,9 @@ Steps
 
 4. First we start with CDI'ing the Servlet, we deal with the REST resource later. Change all tight coupled dependencies (use attribute/field injection) for the ViewItems Servlet, ItemService and ItemDAO to interfaces annotated with ```@Inject```. Rebuild the app and run TomEE. During the startup process you see TomEE fail due to injections errors: 
 
-```
-There is more than one Bean with type oose.dea.services.ItemServiceQualifiers
-```
+    ```
+    There is more than one Bean with type oose.dea.services.ItemServiceQualifiers
+    ```
 
 5. The ItemService is implemented by two classes: LocalItemService and ItemRestService and TomEE cannot deduce which class to use. 
 We can fix this by removing the ItemService interface from the REST resource but in this exercise we'll use the @Named annotation. 
