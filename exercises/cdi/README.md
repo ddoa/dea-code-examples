@@ -32,7 +32,7 @@ Steps
 
 4. First we start with CDI'ing the Servlet, we deal with the REST resource later. 
 
-5. Change all tight coupled dependencies for the ViewItems Servlet, ItemService and ItemDAO to interfaces annotated with ```@Inject```. Rebuild the app, run TomEE and visit [Servlet](http://localhost:8080/viewItems) to test the Servlet.
+5. Change all tight coupled dependencies (use attribute/field injection) for the ViewItems Servlet, ItemService and ItemDAO to interfaces annotated with ```@Inject```. Rebuild the app, run TomEE and visit [Servlet](http://localhost:8080/viewItems) to test the Servlet.
 
 6. To use CDI in combination with Jersey is just as easy. Change all tight coupled dependencies for the REST Resource to interfaces annotated with ```@Inject```. Rebuild the app, run Tomcat and visit [Servlet](http://localhost:8080/rest/items) to test the REST Resource.
 
