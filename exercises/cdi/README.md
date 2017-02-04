@@ -1,4 +1,4 @@
-Exercise Guice in Java EE
+Exercise CDI in Java EE
 =========================
 Resources
 -------------
