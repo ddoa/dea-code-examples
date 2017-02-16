@@ -28,8 +28,7 @@ Ook bij deze workshop is er startcode. De interface - inclusief het balletje - i
 
 Steps
 -----
-1. Importeer de startcode in de java-IDE die jij gebruikt, maak gebruik van Maven! Let daarbij op de folders, die moeten overeenstemmen met de packages. Het programma zelf vormt de package bolanimatie, de broncode moet dus in een folder met die naam.
-Compileer en run het programma.
+1. Open de startcode in jouw IDE via het pom.xml bestand. Als je IntelliJ gebruikt dan krijg je de vraag: "Open file or open as project", kies voor de laatste optie. In Eclipse kies je voor Open->Maven Project. Compileer en run het programma.
 
 2. In het programma is een aantal functies al ingebouwd, zoals het stuiteren van het balletje, het instellen van de snelheid en hoek. Onderzoek hoe dit werkt en ga na hoe je deze functies in je eigen code kunt gebruiken.
 
