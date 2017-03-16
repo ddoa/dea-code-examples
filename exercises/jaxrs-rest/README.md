@@ -6,7 +6,7 @@ The following resources are convenient during the exercise:
 
 * DEA Slides: Java EE Domain Layer 
 * Chapter 4 and 14 from Patterns of Enterprise Application Architecture (Fowler)
-* IntelliJ (or Eclipse) and [TomEE](http://tomee.apache.org/download/tomee-7.0.1.html)
+* IntelliJ (or Eclipse) and [Apache TomEE Plus](http://tomee.apache.org/download-ng.html)
 * Chrome with the [PostMan REST Client-plugin](https://www.getpostman.com/)
 * Need more theory about REST, JSON JAX-RS? Visit these resources for more background information:
 	* http://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340
@@ -23,8 +23,8 @@ In this exercise you'll learn:
 
 Steps
 -----
-1. Download [TomEE](http://tomee.apache.org/download/tomee-7.0.1.html "TomEE"). Unzip this file in a directory of choice (there are known issues with paths containing spaces, you're safe when you unzip this file in the root of your C-disk (Windows), Applications Folder (Mac) or /opt folder (Linux). Make sure the directory you extract TomEE to is world-readable, if you don't you might need to run IntelliJ with Administrator privileges.
-2. Open the Project (pom.xml) in your IDE. The next steps will assume you've used IntelliJ, but we'll guess it still works in any IDE that supports [Maven](http://maven.apache.org/ "Maven") and [TomEE](http://tomee.apache.org/download/tomee-7.0.1.html "TomEE"). 
+1. Download the zip distribution of [Apache TomEE Plus](http://tomee.apache.org/download-ng.html "Apache TomEE Plus"). Unzip this file in a directory of choice (there are known issues with paths containing spaces, you're safe when you unzip this file in the root of your C-disk (Windows), Applications Folder (Mac) or /opt folder (Linux). Make sure the directory you extract TomEE to is world-readable, if you don't you might need to run IntelliJ with Administrator privileges.
+2. Open the Project (pom.xml) in your IDE. The next steps will assume you've used IntelliJ, but we'll guess it still works in any IDE that supports [Maven](http://maven.apache.org/ "Maven") and TomEE. 
 3. Add a new REST Resource: create a class <code>ItemResource</code> and register "/items" as the default path (@Path). Add a method <code>String getTextItems()</code> that:
 
 	* returns a hardcoded String "bread, butter".  
