@@ -20,8 +20,7 @@ In this exercise you'll learn:
 
 Steps
 -----
-1. Open the Project (pom.xml) in your IDE. The next steps will assume you've used IntelliJ, but we'll guess it still works in any IDE that supports [Maven](http://maven.apache.org/ "Maven") and [Tomcat8](http://tomcat.apache.org/ "Tomcat8"). 
-
+1. Open the Project (pom.xml) in your IDE. The next steps will assume you've used IntelliJ, but we'll guess it still works in any IDE that supports [Maven](http://maven.apache.org/ "Maven") and [Tom EE Plus](http://tomee.apache.org/download-ng.html "Tom EE Plus"). 
 2.  Add a simple index.html to the src/main/webapp folder. Build the project and run it using Tomcat. 
 Visit [localhost:8080](http://localhost:8080/).
 
