@@ -14,6 +14,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 @Path("/items")
+@Alternative
 public class ItemRestService implements ItemService {
 
     @Inject
