@@ -20,7 +20,7 @@ aanroepen.
 ## Stap 3 Studenten verantwoordelijk maken voor het registeren 
 Wat opvalt in de JAVA API is dat de Observable een lijst van Observers heeft. Nieuwe Studenten worden nu vanuit de 
 `CourseApp` geregistreerd bij de `Teacher`. Pas dit zodanig aan, dat een `Student` een `setTeacher(teacher)` 
-methode heeft. Wanneer deze wordt aangeroepen, registreerd de student zichzelf bij de Teacher.
+methode heeft. Wanneer deze wordt aangeroepen, registreert de student zichzelf bij de Teacher.
 
 ## Stap 4 Studenten verlaten de les
 Studenten zullen ook soms de klas tussentijds verlaten. Dit gaan we nu inbouwen.
