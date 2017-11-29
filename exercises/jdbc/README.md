@@ -66,15 +66,15 @@ Steps
 	Call the <code>findAll()</code> method from your main-method and display the results.
 
 7. Until now, you might have caught exceptions like this:
-	```java
-	try
+```java
+  try
   {
       connection.prepareStatement("...").execute();
       connection.close();
   } catch (SQLException e) {
       e.printStackTrace();
   }
-	```
+ ```
 
 	As you may know printing the stacktrace uses <code>System.out</code> which may be redirected. That's why code quality tools like [Sonar](http://www.sonarqube.org) advice developers to use a Logger instead.
 
