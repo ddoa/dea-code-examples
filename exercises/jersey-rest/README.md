@@ -19,7 +19,7 @@ The following resources are convenient during the exercise:
  
 In this exercise you'll learn:
 ------------------------------
-*  how to deal with different mediatypes like text/pain and application/json
+*  how to deal with different mediatypes like text/plain and application/json
 *  how to use Jersey and Jackson for mapping POJOs to and from JSON
 *  how to build a REST resource using different HTTP verbs like GET, POST and DELETE 
 
