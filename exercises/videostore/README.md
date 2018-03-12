@@ -4,7 +4,7 @@ Resources
 -------------
 The following resources are convenient during the exercise:
 *  Sheets Refactoring
-* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account by mailing @rodmidde:
+* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account at [ICA Xtend](https://ica-xtend.nl/winkel/):
 	* http://www.pluralsight.com/courses/refactoring-fundamentals
 	* http://www.pluralsight.com/courses/writing-clean-code-humans
 
