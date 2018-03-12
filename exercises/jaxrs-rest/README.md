@@ -13,7 +13,7 @@ The following resources are convenient during the exercise:
 	* http://docs.oracle.com/javaee/6/tutorial/doc/giepu.html
 	* http://www.restapitutorial.com/index.html
 	* http://www.slideshare.net/rmaclean/json-and-rest
-* Need more practical background and do you have a PluralSight account? 
+* Need more practical background and do you have a PluralSight account (apply at [ICA Xtend](https://ica-xtend.nl/winkel/)) 
 	* http://www.pluralsight.com/courses/restful-services-java-using-jersey 
  
 In this exercise you'll learn:
