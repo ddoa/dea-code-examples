@@ -13,7 +13,7 @@ The following resources are convenient (some are required) during the exercise:
 	* http://staff.cs.upt.ro/~ioana/arhit/2015/DataAccessPattern.ppt
 	* http://blog.fedecarg.com/2009/03/12/domain-driven-design-and-data-access-strategies/
 	* http://martinfowler.com/eaaCatalog/
-* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account by mailing @rodmidde:
+* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account at [ICA Xtend](https://ica-xtend.nl/winkel/):
 	* http://www.pluralsight.com/courses/mastering-java-swing-part2 (Querying Databases using JDBC etc.)
 	* http://www.pluralsight.com/courses/mastering-java-swing-part2 (Bridge Pattern)
 
