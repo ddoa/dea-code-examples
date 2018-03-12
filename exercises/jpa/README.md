@@ -7,7 +7,7 @@ The following resources are convenient (some are required) during the exercise:
 * DEA Slides: Java EE Data Source Layer revisited
 * Chapter 11, 12 and 13 from Patterns of Enterprise Application Architecture (Fowler)
 * MySQL installed on your local machine including a MySQL client like [MySQL workbench](https://dev.mysql.com/downloads/workbench/).
-* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account by mailing @rodmidde: 
+* Need more practical background and do you have a PluralSight account? As a HAN-OOSE student you can apply for an account at [ICA Xtend](https://ica-xtend.nl/winkel/):
 	* http://www.pluralsight.com/courses/java-persistence-api-21 (including Querying Entities)
  
 In this exercise you'll learn:
